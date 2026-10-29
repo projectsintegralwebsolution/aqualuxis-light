@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #087FE5;
+  --cyan: #20C7E8;
+  --navy: #082B52;
+  --pale-blue: #EAF6FD;
+  --surface: #F4F9FC;
+  --border: #DDEAF3;
+  --text-main: #102747;
+  --text-muted: #667C96;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  color: #102747;
+  background-color: #FFFFFF;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F9FC;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDEAF3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #087FE5;
+}
+
+/* Water & Glow Accents */
+.subtle-glow-cyan {
+  box-shadow: 0 0 25px -5px rgba(32, 199, 232, 0.3);
+}
+
+.subtle-glow-blue {
+  box-shadow: 0 0 30px -5px rgba(8, 127, 229, 0.25);
+}
+
+.mega-menu-shadow {
+  box-shadow: 0 25px 60px -15px rgba(8, 43, 82, 0.16), 0 10px 25px -5px rgba(8, 43, 82, 0.08);
+}
