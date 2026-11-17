@@ -30,7 +30,7 @@ export default function CataloguePage() {
 
       {/* Catalogues Cards Section */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-2xl mx-auto">
           {CATALOGUES.map((item) => (
             <div
               key={item.id}
@@ -84,7 +84,7 @@ export default function CataloguePage() {
 
                 {/* Actions */}
                 <div className="pt-6 border-t border-[#E3EDF5] flex items-center justify-between">
-                  <span className="text-xs text-[#63758B] font-medium">Format: High-Res PDF</span>
+                  <span className="text-xs text-[#63758B] font-medium">Format: High-Resolution PDF</span>
                   <a
                     href={item.file}
                     download={item.filename}

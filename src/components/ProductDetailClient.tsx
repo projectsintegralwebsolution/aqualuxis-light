@@ -36,9 +36,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
   const relatedProducts = getRelatedProducts(product.slug, 4);
 
   // Relevant catalogue for download
-  const relevantCatalogue = product.category === 'pool-lighting' 
-    ? CATALOGUES[0] 
-    : CATALOGUES[1];
+  const relevantCatalogue = CATALOGUES[0];
 
   // Specific FAQs based on product
   const faqs = [

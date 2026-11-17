@@ -1361,24 +1361,14 @@ export const CATEGORIES: CategoryInfo[] = [
 
 export const CATALOGUES: CatalogueItem[] = [
   {
-    "id": "pool-catalogue",
-    "title": "AQUALUXIS Swimming Pool Lighting Technical Guide",
-    "filename": "huma-swimming-pool-lighting-catalogue-2024.pdf",
-    "cover": "/assets/catalogue/catalogue-cover-pool.webp",
-    "file": "/assets/catalogue/huma-swimming-pool-lighting-catalogue-2024.pdf",
-    "pages": 18,
-    "fileSize": "8.5 MB",
-    "description": "Comprehensive technical specifications, dimensional drawings, photometric options, and wiring schematics for surface, ABS, ultra-slim, full SS, and concealed underwater pool luminaires."
-  },
-  {
-    "id": "fountain-catalogue",
-    "title": "AQUALUXIS Fountain Lighting & Water Feature Catalogue",
-    "filename": "huma-fountain-lighting-catalogue-2024.pdf",
-    "cover": "/assets/catalogue/catalogue-cover-fountain.webp",
-    "file": "/assets/catalogue/huma-fountain-lighting-catalogue-2024.pdf",
-    "pages": 28,
-    "fileSize": "6.3 MB",
-    "description": "Complete engineering guide to spot fountain luminaires, nozzle-mounted donut fixtures, linear architectural wall washers, brass/SS nozzles, and illuminated waterfall spillways."
+    "id": "complete-catalogue",
+    "title": "AQUALUXIS LIGHT – Complete Product Catalogue",
+    "filename": "AQUALUXIS LIGHT CATLOGUE.pdf",
+    "cover": "/assets/catalogue/aqualuxis-light-catalogue-cover.jpg",
+    "file": "/assets/catalogue/aqualuxis-light-catalogue.pdf",
+    "pages": 37,
+    "fileSize": "10.5 MB",
+    "description": "Explore our complete range of swimming pool lights, fountain lights, LED wall washers, fountain nozzles and water cascade products. View product models and technical specifications in our latest catalogue."
   }
 ];
 
