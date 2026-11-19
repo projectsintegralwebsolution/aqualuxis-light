@@ -48,6 +48,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       description,
       images: [product.image],
     },
+    alternates: {
+      canonical: `https://aqualuxislight.com/products/${product.slug}`,
+    },
   };
 }
 
@@ -78,11 +81,47 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
     category: product.categoryName,
   };
 
+  // Schema.org BreadcrumbList structured data
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://aqualuxislight.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Products',
+        item: 'https://aqualuxislight.com/products',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: product.categoryName,
+        item: `https://aqualuxislight.com/${product.categorySlug}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: `${product.name} (${product.code})`,
+        item: `https://aqualuxislight.com/products/${product.slug}`,
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <ProductDetailClient product={product} />
     </>

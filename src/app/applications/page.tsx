@@ -28,7 +28,7 @@ export default function ApplicationsPage() {
       subtitle: 'Residential Estates, Resort Lagoons & Olympic Aquatic Complexes',
       description: 'Underwater swimming pool lighting requires high luminous efficacy to evenly diffuse through water while minimizing glare on the surface. AQUALUXIS LIGHT provides both ultra-slim surface-mount models (15mm profile) for simple retrofit/installation and heavy-duty 11-inch fixtures for high-depth illumination.',
       image: '/assets/hero/hero-pool-night-luxury.webp',
-      recommendedCodes: ['HF00 - HF05', 'HF012', 'HF011 / HF013', 'HF020 / HF021', 'HF023 - HF027'],
+      recommendedCodes: ['AL00 - AL015', 'AL016 - AL029(A)', 'AL030 / AL031', 'AL032 - AL036'],
       benefits: [
         'Safe 12V AC/DC low-voltage operation compliant with pool safety codes',
         'Multi-angle optical lenses (10° to 90°) for uniform pool floor grazing',
@@ -42,9 +42,9 @@ export default function ApplicationsPage() {
       id: 'fountains-geysers',
       title: 'Dynamic Fountains & Dancing Jets',
       subtitle: 'Vertical Water Columns, Bell Displays & Frothy Foam Jets',
-      description: 'Fountains present extreme turbulence and vertical aeration that rapidly disperse ordinary light. Our center-hole donut fixtures (HF052–HF061) thread directly onto fountain nozzles, firing focused beams upward inside the water core for brilliant, shadow-free illumination.',
+      description: 'Fountains present extreme turbulence and vertical aeration that rapidly disperse ordinary light. Our center-hole donut fixtures (AL053–AL061) thread directly onto fountain nozzles, firing focused beams upward inside the water core for brilliant, shadow-free illumination.',
       image: '/assets/hero/hero-fountain-grand.webp',
-      recommendedCodes: ['HF039 - HF042', 'HF043 - HF047', 'HF052 - HF057', 'HF058 - HF061', 'HF064'],
+      recommendedCodes: ['AL037 - AL040', 'AL041 - AL052', 'AL053 - AL057', 'AL058 - AL061', 'AL064'],
       benefits: [
         'Center-hole pass-through fitting 1", 1.5", and 2" nozzle threads',
         'High-punch spot optics designed to illuminate water columns up to 15m high',
@@ -60,7 +60,7 @@ export default function ApplicationsPage() {
       subtitle: 'Shear Descents, Acrylic Cobra Waterfalls & Wall Grazers',
       description: 'Water walls and sheet cascades require specialized illumination that emphasizes the fluid texture without hot spots. From linear IP68 LED wall washers grazing stone backdrops to illuminated acrylic cobra waterfalls where the water itself glows, AQUALUXIS LIGHT creates captivating focal points.',
       image: '/assets/products/hf080-action-water-flow.jpg',
-      recommendedCodes: ['HF062', 'HF076', 'HF078', 'HF080', 'HF077'],
+      recommendedCodes: ['AL062', 'AL075', 'AL076', 'AL077', 'AL078', 'AL080', 'AL081'],
       benefits: [
         'Integrated LED channels within acrylic nozzles for internal water glow',
         'Smooth laminar sheet spillways producing crystal-clear shear cascades',

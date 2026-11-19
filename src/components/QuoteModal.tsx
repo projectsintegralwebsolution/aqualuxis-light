@@ -227,7 +227,7 @@ export default function QuoteModal({
                     type="text"
                     value={formData.productOrCategory}
                     onChange={e => setFormData({ ...formData, productOrCategory: e.target.value })}
-                    placeholder="e.g. HF00 Swimming Pool Light"
+                    placeholder="e.g. AL00 Swimming Pool Light"
                     className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900/60 border border-slate-700 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-[#20C7E8] focus:ring-1 focus:ring-[#20C7E8] transition-colors"
                   />
                 </div>

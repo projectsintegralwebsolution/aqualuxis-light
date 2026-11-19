@@ -1015,7 +1015,7 @@ export default function HomePage() {
                 {/* Action Buttons */}
                 <div className="pt-2 flex flex-wrap items-center gap-4">
                   <Link
-                    href="/products/surface-model-swimming-pool-light-hf00-hf05"
+                    href="/products/surface-model-swimming-pool-light-al00-al015"
                     className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-[#087FE5] to-[#20C7E8] hover:from-[#066ac2] hover:to-[#1ab3d1] text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-cyan-500/25 transition-all transform hover:scale-105 group"
                   >
                     <span>View Product Details</span>
@@ -1023,8 +1023,8 @@ export default function HomePage() {
                   </Link>
 
                   <a
-                    href="/assets/catalogue/huma-swimming-pool-lighting-catalogue-2024.pdf"
-                    download="aqualuxis-pool-lighting-catalogue-2024.pdf"
+                    href="/assets/catalogue/aqualuxis-light-catalogue.pdf"
+                    download="aqualuxis-light-catalogue.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-6 py-3 rounded-full bg-white hover:bg-[#F3F8FC] text-[#142C49] hover:text-[#087FE5] font-bold text-xs sm:text-sm border border-[#DCE8F2] transition-all"

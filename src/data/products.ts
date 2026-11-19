@@ -5,6 +5,8 @@ export interface ProductVariant {
   code: string;
   dimension: string;
   wattage: string;
+  image?: string;
+  ledChip?: string;
 }
 
 export interface Product {
@@ -52,1243 +54,1853 @@ export interface CatalogueItem {
 
 export const PRODUCTS: Product[] = [
   {
-    "id": "hf00-hf05-surface",
-    "code": "HF00 - HF05",
-    "name": "Surface Model Swimming Pool Light (SS 304/316)",
-    "slug": "surface-model-swimming-pool-light-hf00-hf05",
+    "id": "al00-al015-surface",
+    "code": "AL00 - AL015",
+    "name": "Surface Model Swimming Pool Light (SS 304/316/Aluminium)",
+    "slug": "surface-model-swimming-pool-light-al00-al015",
     "category": "pool-lighting",
     "categorySlug": "pool-lighting",
     "categoryName": "Pool Lighting",
-    "subCategory": "Underwater Pool Lights",
+    "subCategory": "SS Surface Swimming Pool Lights",
     "shortDescription": "Full stainless steel surface-mount swimming pool light engineered for underwater durability and high photometric efficiency.",
     "description": "Manufactured with premium SS 304/316 marine-grade stainless steel or aluminium plate, the AQUALUXIS LIGHT Surface Model Swimming Pool Light delivers reliable, long-lasting illumination for concrete and tiled swimming pools. Features IP68 water ingress protection, high-efficiency Power LED Edison chips, and customizable beam spread angles.",
-    "image": "/assets/products/hf00-surface-pool-light.jpg",
+    "image": "/assets/products/al00-surface-pool-light.jpg",
     "gallery": [
-      "/assets/products/hf00-surface-pool-light.jpg",
-      "/assets/products/hf01-surface-pool-light.jpg",
-      "/assets/products/hf02-surface-pool-light.jpg",
-      "/assets/products/hf03-surface-pool-light.jpg",
-      "/assets/products/hf04-surface-pool-light.jpg",
-      "/assets/products/hf05-surface-pool-light.jpg"
-    ],
+      "/assets/products/al00-surface-pool-light.jpg",
+      "/assets/products/al01-surface-pool-light.jpg",
+      "/assets/products/al02-surface-pool-light.jpg",
+      "/assets/products/al03-surface-pool-light.jpg",
+      "/assets/products/al04-surface-pool-light.jpg",
+      "/assets/products/al05-surface-pool-light.jpg",
+      "/assets/products/al06-surface-pool-light.jpg",
+      "/assets/products/al07-surface-pool-light.jpg",
+      "/assets/products/al00-surface-pool-light-profile.jpg",
+      "/assets/products/al00-surface-pool-light-rear.jpg"
+],
     "specifications": {
       "Body Material": "SS 304 / 316 / Aluminium Plate Model",
       "Lens": "PC Glass (Impact & UV Resistant)",
       "LED Chip": "Power LED Edison",
       "Protection Class": "IP68 Submersible Waterproof",
-      "Warranty": "2 Years Manufacturer Warranty",
       "Mounting": "Pool Wall Surface Mounting",
-      "Beam Angle": "10°, 20°, 30°, 40°, 45°, 90°",
-      "Wire": "Poly Cab 1 Metre Submersible Wire",
-      "Color Options": "WW (Warm White), CW (Cool White), RGB, Red, Blue, Green",
-      "Available Wattages": "1W, 3W, 6W, 9W, 12W, 18W, 27W, 36W",
-      "Dimensions": "Dia 50mm to 6\" (Depth 22mm - 1\")"
+      "Beam Angle": "10\u00b0, 20\u00b0, 30\u00b0, 40\u00b0, 45\u00b0, 60\u00b0, 90\u00b0",
+      "Wire": "Poly Cab (1 Mtr Wire)",
+      "Color Options": "WW (2700\u20133000K), NW (4000\u20134500K), CW (6000\u20136500K), Red, Blue, Green, RGB",
+      "Dimensions": "Dia 50mm to 6\" (Thickness 1\")"
     },
     "variants": [
       {
-        "code": "HF00",
-        "dimension": "Dia 50mm, Depth 1\"",
-        "wattage": "1W / 3W"
+        "code": "AL00",
+        "dimension": "Dia 50 mm, Thickness 1\"",
+        "wattage": "1*3 = 3 Watt",
+        "image": "/assets/products/al00-surface-pool-light.jpg"
       },
       {
-        "code": "HF01",
-        "dimension": "Dia 3\", Depth 22mm",
-        "wattage": "3W / 9W"
+        "code": "AL01",
+        "dimension": "Dia 3\", Thickness 1\"",
+        "wattage": "3 Watt / 9 Watt",
+        "image": "/assets/products/al01-surface-pool-light.jpg"
       },
       {
-        "code": "HF02",
-        "dimension": "Dia 4\", Depth 22mm",
-        "wattage": "6W / 18W"
+        "code": "AL02",
+        "dimension": "Dia 4\", Thickness 1\"",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al02-surface-pool-light.jpg"
       },
       {
-        "code": "HF03",
-        "dimension": "Dia 5\", Depth 1\"",
-        "wattage": "9W / 27W"
+        "code": "AL03",
+        "dimension": "Dia 5\", Thickness 1\"",
+        "wattage": "9 Watt / 27 Watt",
+        "image": "/assets/products/al03-surface-pool-light.jpg"
       },
       {
-        "code": "HF04",
-        "dimension": "Dia 5\", Depth 1\"",
-        "wattage": "12W / 36W"
+        "code": "AL04",
+        "dimension": "Dia 5\", Thickness 1\"",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al04-surface-pool-light.jpg"
       },
       {
-        "code": "HF05",
-        "dimension": "Dia 6\", Depth 1\"",
-        "wattage": "18W"
+        "code": "AL05",
+        "dimension": "Dia 6\", Thickness 1\"",
+        "wattage": "18 Watt",
+        "image": "/assets/products/al05-surface-pool-light.jpg"
+      },
+      {
+        "code": "AL06",
+        "dimension": "Dia 3\", Thickness 1\"",
+        "wattage": "3 Watt / 9 Watt",
+        "image": "/assets/products/al06-surface-pool-light.jpg"
+      },
+      {
+        "code": "AL07",
+        "dimension": "Dia 4\", Thickness 1\"",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al07-surface-pool-light.jpg"
+      },
+      {
+        "code": "AL08",
+        "dimension": "Dia 5\", Thickness 1\"",
+        "wattage": "9 Watt / 27 Watt",
+        "image": "/assets/products/al08-surface-pool-light.jpg"
+      },
+      {
+        "code": "AL09",
+        "dimension": "Dia 5\", Thickness 1\"",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al09-surface-pool-light.jpg"
+      },
+      {
+        "code": "AL010",
+        "dimension": "Dia 6\", Thickness 1\"",
+        "wattage": "18 Watt",
+        "image": "/assets/products/al010-surface-pool-light.jpg"
+      },
+      {
+        "code": "AL011",
+        "dimension": "Dia 3\", Thickness 1\"",
+        "wattage": "3 Watt / 9 Watt",
+        "image": "/assets/products/al011-surface-pool-light.jpg"
+      },
+      {
+        "code": "AL012",
+        "dimension": "Dia 4\", Thickness 1\"",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al012-surface-pool-light.jpg"
+      },
+      {
+        "code": "AL013",
+        "dimension": "Dia 5\", Thickness 1\"",
+        "wattage": "9 Watt / 27 Watt",
+        "image": "/assets/products/al013-surface-pool-light.jpg"
+      },
+      {
+        "code": "AL014",
+        "dimension": "Dia 5\", Thickness 1\"",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al014-surface-pool-light.jpg"
+      },
+      {
+        "code": "AL015",
+        "dimension": "Dia 6\", Thickness 1\"",
+        "wattage": "18 Watt",
+        "image": "/assets/products/al015-surface-pool-light.jpg"
+      }
+    ],
+    "applications": [
+      "Residential Underwater Swimming Pool Lighting",
+      "Luxury Resort Swimming Pool Illumination",
+      "Commercial Swimming Pool Lighting",
+      "Architectural Pool Lighting"
+],
+    "features": [
+      "True IP68 hermetically sealed construction for underwater safety",
+      "High-output Power LED Edison chips with minimal lumen depreciation",
+      "Precision optical beam angle options from narrow 10\u00b0 spot to wide 90\u00b0 flood",
+      "Marine-grade corrosion resistant stainless steel and aluminium housing",
+      "Compatible with standard 12V low-voltage transformer safety systems"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "al016-al029a-abs",
+    "code": "AL016 - AL029(A)",
+    "name": "ABS Body Swimming Pool Light",
+    "slug": "abs-body-swimming-pool-light-al016-al029a",
+    "category": "pool-lighting",
+    "categorySlug": "pool-lighting",
+    "categoryName": "Pool Lighting",
+    "subCategory": "ABS Body Swimming Pool Lights",
+    "shortDescription": "Corrosion-proof ABS engineered swimming pool lights with high-lumen Edison & Cree LED chips in ultra-slim and classic profiles.",
+    "description": "Constructed from impact-resistant ABS and polycarbonate polymers, the AQUALUXIS LIGHT ABS Body Pool Light series offers zero risk of corrosion in chemical and salt chlorination pools. Available in diverse profiles from ultra-slim 15mm nicheless models to wide 11-inch fixtures with premium SMD 2835 Cree and Power LED Edison chips.",
+    "image": "/assets/products/al017-abs-pool-light.jpg",
+    "gallery": [
+      "/assets/products/al017-abs-pool-light.jpg",
+      "/assets/products/al018-abs-pool-light.jpg",
+      "/assets/products/al021-abs-pool-light.jpg",
+      "/assets/products/al021-abs-pool-light-rear.jpg",
+      "/assets/products/al023-abs-pool-light-profile.jpg",
+      "/assets/products/al024-abs-pool-light.jpg",
+      "/assets/products/al024-abs-pool-light-profile.jpg",
+      "/assets/products/al025-abs-pool-light.jpg",
+      "/assets/products/al029-abs-colorways.jpg"
+    ],
+    "specifications": {
+      "Body Material": "ABS + PC (Engineered Polymers)",
+      "Lens": "PC Glass (UV Stabilized)",
+      "LED Chip": "Power LED Edison (AL016–AL020) / SMD 2835 CREE (AL021–AL029A)",
+      "Protection Class": "IP68 Submersible Waterproof",
+      "Warranty": "3 Years Warranty (2–3 Years for AL029 series)",
+      "Wire": "Poly Cab (1 Mtr Wire)",
+      "Beam Angle": "10\u00b0, 20\u00b0, 30\u00b0, 40\u00b0, 45\u00b0, 60\u00b0, 90\u00b0",
+      "Color Options": "WW (2700\u20133000K), NW (4000\u20134500K), CW (6000\u20136500K), Red, Blue, Green, RGB",
+      "Dimensions": "Dia 5.5\" to 11\" (Depth 15mm to 60mm)"
+    },
+    "variants": [
+      {
+        "code": "AL016",
+        "dimension": "Dia 5.5\", Depth 40 mm",
+        "wattage": "3 Watt / 9 Watt",
+        "image": "/assets/products/al017-abs-pool-light.jpg",
+        "ledChip": "Power LED Edison"
+      },
+      {
+        "code": "AL017",
+        "dimension": "Dia 6.5\", Depth 40 mm",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al017-abs-pool-light.jpg",
+        "ledChip": "Power LED Edison"
+      },
+      {
+        "code": "AL018",
+        "dimension": "Dia 9\", Depth 40 mm",
+        "wattage": "9 Watt / 27 Watt",
+        "image": "/assets/products/al018-abs-pool-light.jpg",
+        "ledChip": "Power LED Edison"
+      },
+      {
+        "code": "AL019",
+        "dimension": "Dia 9\", Depth 40 mm",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al019-abs-pool-light.jpg",
+        "ledChip": "Power LED Edison"
+      },
+      {
+        "code": "AL020",
+        "dimension": "Dia 9\", Depth 40 mm",
+        "wattage": "18 Watt",
+        "image": "/assets/products/al020-abs-pool-light.jpg",
+        "ledChip": "Power LED Edison"
+      },
+      {
+        "code": "AL021",
+        "dimension": "Dia 11\", Depth 41 mm",
+        "wattage": "12W / 18W / 27W / 36W",
+        "image": "/assets/products/al021-abs-pool-light.jpg",
+        "ledChip": "SMD 2835 CREE"
+      },
+      {
+        "code": "AL022",
+        "dimension": "Dia 11\", Depth 41 mm",
+        "wattage": "12W / 18W / 27W / 36W",
+        "image": "/assets/products/al022-abs-pool-light.jpg",
+        "ledChip": "SMD 2835 CREE"
+      },
+      {
+        "code": "AL023",
+        "dimension": "Dia 11\", Depth 50 mm",
+        "wattage": "12W / 18W / 27W / 36W",
+        "image": "/assets/products/al023-abs-pool-light.jpg",
+        "ledChip": "SMD 2835 CREE"
+      },
+      {
+        "code": "AL024",
+        "dimension": "Dia 11\", Depth 15 mm (Ultra Slim Nicheless)",
+        "wattage": "12W / 18W / 27W / 36W",
+        "image": "/assets/products/al024-abs-pool-light.jpg",
+        "ledChip": "SMD 2835 CREE"
+      },
+      {
+        "code": "AL025",
+        "dimension": "Dia 10\", Depth 60 mm",
+        "wattage": "12 Watt / 18 Watt",
+        "image": "/assets/products/al025-abs-pool-light.jpg",
+        "ledChip": "SMD 2835 CREE"
+      },
+      {
+        "code": "AL026",
+        "dimension": "Dia 10\", Depth 60 mm",
+        "wattage": "12 Watt / 18 Watt",
+        "image": "/assets/products/al026-abs-pool-light.jpg",
+        "ledChip": "SMD 2835 CREE"
+      },
+      {
+        "code": "AL027",
+        "dimension": "Dia 10\", Depth 60 mm",
+        "wattage": "12 Watt / 18 Watt",
+        "image": "/assets/products/al027-abs-pool-light.jpg",
+        "ledChip": "SMD 2835 CREE"
+      },
+      {
+        "code": "AL028",
+        "dimension": "Dia 10\", Depth 60 mm",
+        "wattage": "12 Watt / 18 Watt",
+        "image": "/assets/products/al028-abs-pool-light.jpg",
+        "ledChip": "SMD 2835 CREE"
+      },
+      {
+        "code": "AL029",
+        "dimension": "Dia 9.5\", Depth 60 mm",
+        "wattage": "12W / 18W / 27W / 36W",
+        "image": "/assets/products/al029-abs-pool-light.jpg",
+        "ledChip": "SMD 2835 CREE (Color Rims: Grey/Black/Blue/Red)"
+      },
+      {
+        "code": "AL029(A)",
+        "dimension": "Dia 6.5\", Depth 60 mm",
+        "wattage": "9W / 12W / 18W",
+        "image": "/assets/products/al029a-abs-pool-light.jpg",
+        "ledChip": "SMD 2835 CREE"
       }
     ],
     "applications": [
       "Residential Swimming Pools",
-      "Commercial Pools",
-      "Hotels & Resorts",
-      "Water Bodies"
-    ],
+      "Saltwater & Chlorinated Swimming Pools",
+      "Hotel & Resort Swimming Pools",
+      "Commercial Aquatic Facilities"
+],
     "features": [
-      "Heavy-duty SS 304/316 body resistant to pool chemicals and corrosion",
-      "True IP68 hermetically sealed underwater construction",
-      "High luminous efficiency with Edison Power LED emitters",
-      "Poly Cab submersible-grade marine wiring for long-term safety",
-      "Flexible beam angles for tailored pool floor and wall washes"
+      "100% chemical resistant engineered ABS body eliminating rust and galvanic corrosion",
+      "Ultra-slim 15mm profile option (AL024) for effortless surface mounting without wall niches",
+      "High luminous efficiency SMD 2835 Cree and Power LED Edison chips",
+      "Superior thermal management for long continuous operating life underwater",
+      "Rich monochromatic and multi-color RGB options"
     ],
     "isFeatured": true
   },
   {
-    "id": "hf06-hf010-abs",
-    "code": "HF06 - HF010",
-    "name": "ABS Body Swimming Pool Light",
-    "slug": "abs-body-swimming-pool-light-hf06-hf010",
+    "id": "al030-al031-ss",
+    "code": "AL030 / AL031",
+    "name": "SS Body Swimming Pool Light",
+    "slug": "ss-body-swimming-pool-light-al030-al031",
     "category": "pool-lighting",
     "categorySlug": "pool-lighting",
     "categoryName": "Pool Lighting",
-    "subCategory": "LED Pool Lights",
-    "shortDescription": "Durable ABS & Polycarbonate swimming pool lights with superior chemical resistance and uniform light distribution.",
-    "description": "Constructed from high-grade ABS polymer and UV-stabilized Polycarbonate (PC) glass, this range provides chemical and chlorine resistance without oxidation. Ideal for both chlorinated and saltwater swimming pool installations, offering rich vibrant colors and minimal maintenance.",
-    "image": "/assets/products/hf06-abs-pool-light.jpg",
+    "subCategory": "SS Body Swimming Pool Lights",
+    "shortDescription": "Heavy-duty stainless steel and polycarbonate underwater luminaires with high-lumen Cree and Edison LEDs.",
+    "description": "Constructed with solid stainless steel faceplates and reinforced polycarbonate backing, the AQUALUXIS LIGHT SS Body Swimming Pool Light combines mechanical strength with aesthetic elegance. Built for luxury residential, resort, and commercial aquatic facilities.",
+    "image": "/assets/products/al030-ss-pool-light.jpg",
     "gallery": [
-      "/assets/products/hf06-abs-pool-light.jpg",
-      "/assets/products/hf07-abs-pool-light.jpg",
-      "/assets/products/hf08-abs-pool-light.jpg",
-      "/assets/products/hf09-abs-pool-light.jpg",
-      "/assets/products/hf010-abs-pool-light.jpg"
-    ],
+      "/assets/products/al030-ss-pool-light.jpg",
+      "/assets/products/al030-ss-pool-light-side.jpg",
+      "/assets/products/al030-ss-pool-light-rear.jpg",
+      "/assets/products/al031-ss-pool-light.jpg",
+      "/assets/products/al031-ss-pool-light-side.jpg",
+      "/assets/products/al031-ss-pool-light-rear.jpg",
+      "/assets/products/al031-ss-pool-light-profile.jpg"
+],
     "specifications": {
-      "Body Material": "ABS + PC (Chlorine & Saltwater Resistant)",
+      "Body Material": "SS + PC",
+      "Lens": "PC Glass",
+      "LED Chip": "CREE / Edison / SMD 2835 CREE / Power LED",
+      "Protection Class": "IP68 Submersible Waterproof",
+      "Wire": "Poly Cab (1 Mtr Wire)",
+      "Beam Angle": "10\u00b0, 20\u00b0, 30\u00b0, 40\u00b0, 45\u00b0, 60\u00b0, 90\u00b0",
+      "Color Options": "WW (2700\u20133000K), NW (4000\u20134500K), CW (6000\u20136500K), Red, Blue, Green, RGB",
+      "Dimensions": "Dia 8\" to 9\" (Depth 35mm to 40mm)"
+    },
+    "variants": [
+      {
+        "code": "AL030",
+        "dimension": "Dia 8\", Depth 35 mm",
+        "wattage": "6W / 18W / 9W / 27W / 12W / 36W",
+        "image": "/assets/products/al030-ss-pool-light.jpg"
+      },
+      {
+        "code": "AL031",
+        "dimension": "Dia 9\", Depth 40 mm",
+        "wattage": "12 Watt / 18 Watt",
+        "image": "/assets/products/al031-ss-pool-light.jpg"
+      }
+    ],
+    "applications": [
+      "Premium Residential Swimming Pools",
+      "Luxury Hotel Swimming Pools",
+      "Resort Pool Installations",
+      "Commercial Swimming Pool Environments"
+],
+    "features": [
+      "High grade stainless steel faceplate with impact-resistant PC glass lens",
+      "Advanced SMD 2835 Cree and Power LED optics for uniform illumination",
+      "Submersible IP68 rating engineered for continuous deep submersion",
+      "Low-voltage 12V safe operation standard"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "al032-al036-concealed",
+    "code": "AL032 - AL036",
+    "name": "Concealed Swimming Pool Light",
+    "slug": "concealed-swimming-pool-light-al032-al036",
+    "category": "pool-lighting",
+    "categorySlug": "pool-lighting",
+    "categoryName": "Pool Lighting",
+    "subCategory": "Concealed Swimming Pool Lights",
+    "shortDescription": "Recessed concealed stainless steel underwater luminaires for steps, ledges, perimeter walls, and submerged pool niches.",
+    "description": "Engineered for flush recessed mounting into swimming pool walls, steps, and bottom floors, the AQUALUXIS LIGHT Concealed Swimming Pool Light delivers seamless architectural integration. Made of marine-grade SS 304/316 stainless steel with Edison Power LEDs and protective PC glass.",
+    "image": "/assets/products/al032-concealed-pool-light.jpg",
+    "gallery": [
+      "/assets/products/al032-concealed-pool-light.jpg",
+      "/assets/products/al032-concealed-pool-light-housing.jpg",
+      "/assets/products/al034-concealed-pool-light.jpg",
+      "/assets/products/al035-concealed-pool-light.jpg",
+      "/assets/products/al036-concealed-pool-light.jpg",
+      "/assets/products/al032-concealed-pool-light-profile.jpg",
+      "/assets/products/al033-concealed-pool-light-profile.jpg",
+      "/assets/products/al036-concealed-pool-light-rear.jpg"
+],
+    "specifications": {
+      "Body Material": "SS 304 / 316",
       "Lens": "PC Glass",
       "LED Chip": "Power LED Edison",
       "Protection Class": "IP68 Submersible Waterproof",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Pool Wall Mounting",
-      "Beam Angle": "20°, 30°, 40°, 45°, 60°, 90°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "WW, CW, RGB, Red, Blue, Green",
-      "Available Wattages": "3W, 6W, 9W, 12W, 18W, 27W, 36W",
-      "Dimensions": "Dia 5.5\" - 9\" (Depth 40mm)"
+      "Wire": "Poly Cab (1 Mtr Wire)",
+      "Beam Angle": "10\u00b0, 20\u00b0, 30\u00b0, 40\u00b0, 45\u00b0, 60\u00b0, 90\u00b0",
+      "Color Options": "WW (2700\u20133000K), NW (4000\u20134500K), CW (6000\u20136500K), Red, Blue, Green, RGB",
+      "Dimensions": "Outer Dia 45mm to 140mm (Cutout 32mm to 110mm)"
     },
     "variants": [
       {
-        "code": "HF06",
-        "dimension": "Dia 5.5\", Depth 40mm",
-        "wattage": "3W / 9W"
+        "code": "AL032",
+        "dimension": "Outer 45 mm, Cutout 32 mm, Height 55 mm",
+        "wattage": "1 Watt / 3 Watt",
+        "image": "/assets/products/al032-concealed-pool-light.jpg"
       },
       {
-        "code": "HF07",
-        "dimension": "Dia 6.5\", Depth 40mm",
-        "wattage": "6W / 18W"
+        "code": "AL033",
+        "dimension": "Outer 85 mm, Cutout 60 mm, Height 56 mm",
+        "wattage": "3 Watt / 9 Watt",
+        "image": "/assets/products/al033-concealed-pool-light.jpg"
       },
       {
-        "code": "HF08",
-        "dimension": "Dia 9\", Depth 40mm",
-        "wattage": "9W / 27W"
+        "code": "AL034",
+        "dimension": "Outer 110 mm, Cutout 85 mm, Height 46 mm",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al034-concealed-pool-light.jpg"
       },
       {
-        "code": "HF09",
-        "dimension": "Dia 9\", Depth 40mm",
-        "wattage": "12W / 36W"
+        "code": "AL035",
+        "dimension": "Outer 140 mm, Cutout 110 mm, Height 50 mm (9 LED)",
+        "wattage": "9 Watt / 27 Watt",
+        "image": "/assets/products/al035-concealed-pool-light.jpg"
       },
       {
-        "code": "HF010",
-        "dimension": "Dia 9\", Depth 40mm",
-        "wattage": "18W"
+        "code": "AL036",
+        "dimension": "Outer 140 mm, Cutout 110 mm, Height 50 mm (12 LED)",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al036-concealed-pool-light.jpg"
       }
     ],
     "applications": [
-      "Residential Pools",
-      "Clubhouse Pools",
-      "Hotels & Resorts",
-      "School Pools"
-    ],
+      "Flush-Mounted Pool Lighting Installations",
+      "Minimalist Architectural Swimming Pools",
+      "Luxury Infinity Pools",
+      "Integrated Underwater Pool Lighting"
+],
     "features": [
-      "Corrosion-free ABS composite body suited for high-salinity pools",
-      "Robust PC glass lens with anti-glare micro-prism structure",
-      "IP68 waterproof certification with precision silicone gaskets",
-      "Edison Power LEDs providing vibrant color reproduction",
-      "Standard wall bracket for seamless retrofit or new construction"
+      "Flush in-ground / in-wall recessed design preventing swimmer interference",
+      "Precision SS 304/316 marine stainless steel bezel and body",
+      "High impact PC glass lens resistant to pool chemicals and thermal shock",
+      "Comprehensive wattage range from 1W accent to 36W high output"
     ],
     "isFeatured": true
   },
   {
-    "id": "hf012-slim-abs",
-    "code": "HF012",
-    "name": "Ultra-Slim 15mm ABS Swimming Pool Light",
-    "slug": "ultra-slim-15mm-abs-swimming-pool-light-hf012",
-    "category": "pool-lighting",
-    "categorySlug": "pool-lighting",
-    "categoryName": "Pool Lighting",
-    "subCategory": "LED Pool Lights",
-    "shortDescription": "Ultra-low-profile 15mm slim pool light featuring SMD 2835 Cree LEDs for sleek architectural flush wall integration.",
-    "description": "With an ultra-thin protrusion of merely 15mm off the finished pool tile wall, the HF012 model delivers an ultra-clean modern aesthetic that prevents accidental foot snagging and streamlines pool maintenance. Powered by cutting-edge SMD 2835 Cree LED arrays for high lumen efficacy and extended operational lifespan.",
-    "image": "/assets/products/hf012-slim-abs-pool-light.webp",
-    "gallery": [
-      "/assets/products/hf012-slim-abs-pool-light.webp"
-    ],
-    "specifications": {
-      "Body Material": "High-Impact ABS + PC",
-      "Lens": "PC Glass Clear Diffuser",
-      "LED Chip": "SMD 2835 Cree LED Array",
-      "Protection Class": "IP68 Submersible Waterproof",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Pool Wall Mounting (Slim Profile)",
-      "Beam Angle": "20°, 30°, 40°, 45°, 60°, 90°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "Warm White, Cool White, RGB, Red, Blue, Green",
-      "Available Wattages": "12W / 18W / 27W / 36W",
-      "Dimensions": "Dia 11\", Depth 15 mm (Ultra Slim)"
-    },
-    "variants": [
-      {
-        "code": "HF012-12W",
-        "dimension": "Dia 11\", Depth 15mm",
-        "wattage": "12 Watt"
-      },
-      {
-        "code": "HF012-18W",
-        "dimension": "Dia 11\", Depth 15mm",
-        "wattage": "18 Watt"
-      },
-      {
-        "code": "HF012-27W",
-        "dimension": "Dia 11\", Depth 15mm",
-        "wattage": "27 Watt"
-      },
-      {
-        "code": "HF012-36W",
-        "dimension": "Dia 11\", Depth 15mm",
-        "wattage": "36 Watt"
-      }
-    ],
-    "applications": [
-      "Luxury Residential Pools",
-      "Infinity Pools",
-      "Hotel Rooftop Pools",
-      "Architectural Pools"
-    ],
-    "features": [
-      "Remarkably slim 15mm depth for a seamless architectural wall profile",
-      "High-density SMD 2835 Cree chip board for even illumination across water",
-      "Zero corrosion polymer construction resistant to UV degradation",
-      "Easy clip-on wall mounting bracket with secure locking mechanism",
-      "Full IP68 submersible rating with thermal dissipation backing"
-    ],
-    "isFeatured": true
-  },
-  {
-    "id": "hf011-hf013-abs",
-    "code": "HF011 / HF013",
-    "name": "Heavy-Duty 11\" ABS Swimming Pool Light",
-    "slug": "heavy-duty-11-inch-abs-swimming-pool-light-hf011-hf013",
-    "category": "pool-lighting",
-    "categorySlug": "pool-lighting",
-    "categoryName": "Pool Lighting",
-    "subCategory": "Swimming Pool Lights",
-    "shortDescription": "High-output 11-inch diameter pool fixture engineered with SMD 2835 Cree LEDs for expansive water coverage.",
-    "description": "The HF011 & HF013 series are flagship 11-inch swimming pool lights engineered for medium-to-large residential and commercial pool volumes. Their broad optical surface and Cree SMD arrays cast a wide, luminous blanket across water depth with zero dark spots.",
-    "image": "/assets/products/hf011-abs-pool-light.webp",
-    "gallery": [
-      "/assets/products/hf011-abs-pool-light.webp",
-      "/assets/products/hf013-abs-pool-light.webp"
-    ],
-    "specifications": {
-      "Body Material": "ABS + PC Engineered Polymer",
-      "Lens": "PC Glass Textured Diffuser",
-      "LED Chip": "SMD 2835 Cree",
-      "Protection Class": "IP68 Submersible Waterproof",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Pool Wall Mounting",
-      "Beam Angle": "20°, 30°, 40°, 45°, 60°, 90°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "WW, CW, RGB, Red, Blue, Green",
-      "Available Wattages": "12W, 18W, 27W, 36W",
-      "Dimensions": "Dia 11\", Depth 41 mm"
-    },
-    "variants": [
-      {
-        "code": "HF011",
-        "dimension": "Dia 11\", Depth 41mm",
-        "wattage": "12W / 18W / 27W / 36W"
-      },
-      {
-        "code": "HF013",
-        "dimension": "Dia 11\", Depth 41mm",
-        "wattage": "12W / 18W / 27W / 36W"
-      }
-    ],
-    "applications": [
-      "Commercial Swimming Pools",
-      "Olympic & Training Pools",
-      "Resort Lagoons",
-      "Villa Pools"
-    ],
-    "features": [
-      "Extensive 11-inch beam face for maximum water body dispersion",
-      "SMD 2835 Cree LED engine offering up to 36W of intense underwater output",
-      "Engineered slotted bezel design for hydrodynamic water flow",
-      "IP68 certified underwater protection with reinforced sealing",
-      "Supplied with standard Poly Cab marine grade 1-meter wire"
-    ],
-    "isFeatured": false
-  },
-  {
-    "id": "hf018-color-rim",
-    "code": "HF018",
-    "name": "Custom Color Rim ABS Swimming Pool Light",
-    "slug": "custom-color-rim-abs-swimming-pool-light-hf018",
-    "category": "pool-lighting",
-    "categorySlug": "pool-lighting",
-    "categoryName": "Pool Lighting",
-    "subCategory": "Pool Light Fittings",
-    "shortDescription": "Designer pool luminaire available in White, Grey, Black, Blue and Red rim options to complement pool tile aesthetics.",
-    "description": "Architects and pool designers frequently require lighting hardware that harmonizes with mosaic tile tones, liner colors, and natural stone finishes. The HF018 offers interchangeable designer rim finishes in White, Grey, Anthracite Black, Ocean Blue, and Crimson Red alongside Cree SMD LED performance.",
-    "image": "/assets/products/hf018-abs-color-rim-pool-light.webp",
-    "gallery": [
-      "/assets/products/hf018-abs-color-rim-pool-light.webp",
-      "/assets/products/hf018-rim-colorways.webp"
-    ],
-    "specifications": {
-      "Body Material": "ABS + PC (Multiple Color Rims)",
-      "Available Rim Colors": "Classic White, Modern Grey, Sleek Black, Deep Blue, Bold Red",
-      "Lens": "PC Glass",
-      "LED Chip": "SMD 2835 Cree",
-      "Protection Class": "IP68 Submersible",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Pool Wall Mounting",
-      "Beam Angle": "20°, 30°, 40°, 45°, 60°, 90°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "Warm White, Cool White, RGB, Red, Blue, Green",
-      "Available Wattages": "9W / 12W / 18W / 27W / 36W",
-      "Dimensions": "Dia 6\" & Dia 9.5\", Depth 30 mm"
-    },
-    "variants": [
-      {
-        "code": "HF018-6",
-        "dimension": "Dia 6\", Depth 30mm",
-        "wattage": "9W / 12W / 18W"
-      },
-      {
-        "code": "HF018-9.5",
-        "dimension": "Dia 9.5\", Depth 30mm",
-        "wattage": "18W / 27W / 36W"
-      }
-    ],
-    "applications": [
-      "Designer Tile Pools",
-      "Dark Plaster Pools",
-      "Resort Lap Pools",
-      "Architectural Water Features"
-    ],
-    "features": [
-      "Choice of 5 architectural rim colors: White, Grey, Black, Blue, Red",
-      "Slim 30mm profile reduces protrusion from pool wall",
-      "High-grade Cree SMD technology for uniform color distribution",
-      "Chemical-resistant polymer prevents discoloration from pool chlorine",
-      "Backed by AQUALUXIS LIGHT 2-year manufacturer warranty"
-    ],
-    "isFeatured": true
-  },
-  {
-    "id": "hf020-hf021-ss",
-    "code": "HF020 / HF021",
-    "name": "Full SS Body Swimming Pool Light",
-    "slug": "full-ss-body-swimming-pool-light-hf020-hf021",
-    "category": "pool-lighting",
-    "categorySlug": "pool-lighting",
-    "categoryName": "Pool Lighting",
-    "subCategory": "Underwater Pool Lights",
-    "shortDescription": "Marine-grade Stainless Steel swimming pool fixture with optional blue accent bezel ring.",
-    "description": "Constructed with solid stainless steel housing and impact-rated PC glass, the HF020 and HF021 series offer industrial-grade robustness and refined visual elegance. Available with decorative aqua blue accent rings or pure polished steel rims.",
-    "image": "/assets/products/hf020-ss-pool-light.webp",
-    "gallery": [
-      "/assets/products/hf020-ss-pool-light.webp",
-      "/assets/products/hf021-ss-pool-light.webp"
-    ],
-    "specifications": {
-      "Body Material": "SS 304/316 + PC",
-      "Lens": "PC Glass",
-      "LED Chip": "Cree / Edison",
-      "Protection Class": "IP68 Submersible Waterproof",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Pool Wall Mounting",
-      "Beam Angle": "20°, 30°, 40°, 45°, 60°, 90°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "WW, CW, RGB, Red, Blue, Green",
-      "Available Wattages": "6W, 9W, 12W, 18W, 27W, 36W",
-      "Dimensions": "Dia 8\", Depth 35 mm"
-    },
-    "variants": [
-      {
-        "code": "HF020",
-        "dimension": "Dia 8\", Depth 35mm",
-        "wattage": "6W / 9W / 18W / 27W"
-      },
-      {
-        "code": "HF021",
-        "dimension": "Dia 8\", Depth 35mm",
-        "wattage": "12W / 36W"
-      }
-    ],
-    "applications": [
-      "Luxury Hotel Pools",
-      "Resort Infinity Pools",
-      "Private Residential Pools",
-      "High-End Spas"
-    ],
-    "features": [
-      "Solid marine grade stainless steel casing for maximum thermal performance",
-      "Elegant polished bezel with optional radiant blue accent trim",
-      "High power Cree / Edison LEDs with concentrated or wide optical lenses",
-      "Heavy-duty internal potting and silicone gaskets for guaranteed IP68 seal",
-      "Complies with international low-voltage safety standards"
-    ],
-    "isFeatured": false
-  },
-  {
-    "id": "hf022-ss-blue-white",
-    "code": "HF022",
-    "name": "SS Blue / White Rim Swimming Pool Light",
-    "slug": "ss-blue-white-rim-swimming-pool-light-hf022",
-    "category": "pool-lighting",
-    "categorySlug": "pool-lighting",
-    "categoryName": "Pool Lighting",
-    "subCategory": "Pool Light Fittings",
-    "shortDescription": "9-inch diameter stainless steel luminaire with high-output SMD 2835 Cree array and dual-tone rim choices.",
-    "description": "The HF022 pairs high-durability stainless steel structure with a choice of high-visibility blue or clean white trim rings. Equipped with a robust stainless steel wall mounting bracket and SMD 2835 Cree/Power LED platform.",
-    "image": "/assets/products/hf022-ss-blue-rim-pool-light.webp",
-    "gallery": [
-      "/assets/products/hf022-ss-blue-rim-pool-light.webp",
-      "/assets/products/hf022-ss-white-rim-pool-light.webp"
-    ],
-    "specifications": {
-      "Body Material": "SS + PC Dual Finish",
-      "Lens": "PC Glass",
-      "LED Chip": "SMD 2835 Cree / Power LED",
-      "Protection Class": "IP68 Submersible",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Pool Wall Mounting (SS Bracket)",
-      "Beam Angle": "20°, 30°, 40°, 45°, 60°, 90°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "WW / CW / RGB / Red / Blue / Green",
-      "Available Wattages": "9 Watt / 12 Watt / 18 Watt",
-      "Dimensions": "Dia 9\", Depth 40 mm"
-    },
-    "variants": [
-      {
-        "code": "HF022-Blue",
-        "dimension": "Dia 9\", Depth 40mm",
-        "wattage": "9W / 12W / 18W"
-      },
-      {
-        "code": "HF022-White",
-        "dimension": "Dia 9\", Depth 40mm",
-        "wattage": "9W / 12W / 18W"
-      }
-    ],
-    "applications": [
-      "Resort Pools",
-      "Private Swimming Pools",
-      "Commercial Aquatic Centers"
-    ],
-    "features": [
-      "Dual bezel styling available in vibrant blue or pure white rim",
-      "Heavy duty stainless steel rear bracket ensures vibration-free mounting",
-      "SMD 2835 Cree / Power LED array with uniform beam diffusion",
-      "Double-sealed IP68 cable entry point with Poly Cab cable",
-      "Tested for continuous 24/7 underwater thermal reliability"
-    ],
-    "isFeatured": false
-  },
-  {
-    "id": "hf023-hf027-concealed",
-    "code": "HF023 - HF027",
-    "name": "Concealed / In-Ground Swimming Pool Light",
-    "slug": "concealed-in-ground-swimming-pool-light-hf023-hf027",
-    "category": "pool-lighting",
-    "categorySlug": "pool-lighting",
-    "categoryName": "Pool Lighting",
-    "subCategory": "Underwater Pool Lights",
-    "shortDescription": "Flush-mount recessed stainless steel pool light for steps, shallow decks, coping edges, and submerged wall niches.",
-    "description": "Engineered for flush recessing into concrete pool walls, steps, shallow tanning ledges, and swimming pool perimeter walkways. Constructed with SS 304/316 front trim and recessed sleeve housing, ensuring zero protrusion and a clean architectural finish.",
-    "image": "/assets/products/hf025-concealed-pool-light.webp",
-    "gallery": [
-      "/assets/products/hf025-concealed-pool-light.webp",
-      "/assets/products/hf023-concealed-pool-light.webp",
-      "/assets/products/hf024-concealed-pool-light.webp",
-      "/assets/products/hf026-concealed-pool-light.webp",
-      "/assets/products/hf027-concealed-pool-light.webp"
-    ],
-    "specifications": {
-      "Body Material": "SS 304 / 316 Trim + Recessed Sleeve",
-      "Lens": "Toughened PC Glass",
-      "LED Chip": "Power LED Edison",
-      "Protection Class": "IP68 Submersible Waterproof",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Swimming Pool Concealed Flush Mounting",
-      "Beam Angle": "20°, 30°, 40°, 45°, 60°, 90°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "WW, CW, RGB, Red, Blue, Green",
-      "Available Wattages": "1W, 3W, 6W, 9W, 12W, 18W, 27W, 36W",
-      "Cutout Sizes": "Cutout 32mm to 110mm (Outer Dia 45mm to 140mm)"
-    },
-    "variants": [
-      {
-        "code": "HF023",
-        "dimension": "Outer 45mm, Cutout 32mm, Height 55mm",
-        "wattage": "1W / 3W"
-      },
-      {
-        "code": "HF024",
-        "dimension": "Outer 65mm, Cutout 60mm, Height 56mm",
-        "wattage": "3W / 9W"
-      },
-      {
-        "code": "HF025",
-        "dimension": "Outer 110mm, Cutout 85mm, Height 46mm",
-        "wattage": "6W / 18W"
-      },
-      {
-        "code": "HF026",
-        "dimension": "Outer 140mm, Cutout 110mm, Height 50mm",
-        "wattage": "9W / 27W"
-      },
-      {
-        "code": "HF027",
-        "dimension": "Outer 140mm, Cutout 110mm, Height 50mm",
-        "wattage": "12W / 36W"
-      }
-    ],
-    "applications": [
-      "Pool Steps & Risers",
-      "Baja Shelves & Tanning Ledges",
-      "Perimeter Pool Walkways",
-      "Spas & Jacuzzis",
-      "Water Fall Basins"
-    ],
-    "features": [
-      "Concealed flush-mount design eliminates trips or snags in shallow water",
-      "Machined SS 304/316 face plate withstands foot traffic and pressure",
-      "High luminous output from compact Edison Power LED emitters",
-      "Supplied with rugged installation sleeve for casting into concrete",
-      "IP68 submersible certification with factory-tested water seal"
-    ],
-    "isFeatured": true
-  },
-  {
-    "id": "hf039-hf042-ss-spot",
-    "code": "HF039 - HF042",
-    "name": "SS Spot Fountain Light (Heavy Duty)",
-    "slug": "ss-spot-fountain-light-hf039-hf042",
+    "id": "al037-al040-full-ss-spot",
+    "code": "AL037 - AL040",
+    "name": "Full SS Spot Fountain Light",
+    "slug": "full-ss-spot-fountain-light-al037-al040",
     "category": "fountain-lighting",
     "categorySlug": "fountain-lighting",
     "categoryName": "Fountain Lighting",
-    "subCategory": "Underwater Fountain Lights",
-    "shortDescription": "Heavy-duty full stainless steel underwater spot light with 180° adjustable stand mount for dynamic fountain jets.",
-    "description": "The AQUALUXIS LIGHT HF039–HF042 series spot fountain lights are built for demanding fountain and water display environments. Made from solid SS 304/316 stainless steel with an integrated pivoting bracket, these luminaires can be angled precisely towards water columns, foam jets, and cascades.",
-    "image": "/assets/products/hf042-ss-spot-fountain-light.webp",
+    "subCategory": "Full SS Spot Fountain Lights",
+    "shortDescription": "Full stainless steel 304/316 underwater spot projector engineered for dynamic water fountains and architectural jets.",
+    "description": "Constructed from 100% solid SS 304/316 stainless steel, the AQUALUXIS LIGHT Full SS Spot Fountain Light is built for continuous underwater operation in fountains and water basins. Features high-intensity Cree and Edison LED chips for sharp, punchy water beam illumination.",
+    "image": "/assets/products/al037-full-ss-spot-fountain-light.jpg",
     "gallery": [
-      "/assets/products/hf042-ss-spot-fountain-light.webp",
-      "/assets/products/hf039-ss-spot-fountain-light.webp",
-      "/assets/products/hf040-ss-spot-fountain-light.webp",
-      "/assets/products/hf041-ss-spot-fountain-light.webp"
-    ],
+      "/assets/products/al037-full-ss-spot-fountain-light.jpg",
+      "/assets/products/al038-full-ss-spot-fountain-light.jpg",
+      "/assets/products/al039-full-ss-spot-fountain-light.jpg",
+      "/assets/products/al040-full-ss-spot-fountain-light.jpg",
+      "/assets/products/al037-full-ss-spot-fountain-light-bracket.jpg",
+      "/assets/products/al037-full-ss-spot-fountain-light-profile.jpg",
+      "/assets/products/al037-full-ss-spot-fountain-light-bezel.jpg"
+],
     "specifications": {
-      "Body Material": "SS 304 / 316 Solid Stainless Steel",
+      "Body Material": "SS 304 / 316",
       "Lens": "PC Glass",
-      "LED Chip": "Cree / Edison",
+      "LED Chip": "CREE / Edison",
       "Protection Class": "IP68 Submersible Waterproof",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Stand Mounted Pivoting System",
-      "Beam Angle": "10°, 20°, 30°, 40°, 45°, 60°, 90°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "WW, CW, RGB, Red, Blue, Green",
-      "Available Wattages": "3W, 6W, 9W, 12W, 18W, 27W, 36W",
-      "Dimensions": "Outer Dia 3.5\" to 140mm"
+      "Wire": "Poly Cab (1 Mtr Wire)",
+      "Beam Angle": "10\u00b0, 20\u00b0, 30\u00b0, 40\u00b0, 45\u00b0, 60\u00b0, 90\u00b0",
+      "Color Options": "WW (2700\u20133000K), NW (4000\u20134500K), CW (6000\u20136500K), Red, Blue, Green, RGB",
+      "Dimensions": "Outer Dia 3.4\" to 140 mm (Back Dia 2.2\" to 85 mm)"
     },
     "variants": [
       {
-        "code": "HF039",
-        "dimension": "Back Dia 2.2\", Outer Dia 3.5\"",
-        "wattage": "3 Watt / 9 Watt"
+        "code": "AL037",
+        "dimension": "Outer Dia 3.4\", Back Dia 2.2\"",
+        "wattage": "3 Watt / 9 Watt",
+        "image": "/assets/products/al037-full-ss-spot-fountain-light.jpg"
       },
       {
-        "code": "HF040",
-        "dimension": "Back Dia 65mm, Outer Dia 110mm, Length 110mm",
-        "wattage": "6 Watt / 18 Watt"
+        "code": "AL038",
+        "dimension": "Outer Dia 110 mm, Back Dia 85 mm",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al038-full-ss-spot-fountain-light.jpg"
       },
       {
-        "code": "HF041",
-        "dimension": "Back Dia 85mm, Outer Dia 140mm, Length 110mm",
-        "wattage": "9 Watt / 27 Watt"
+        "code": "AL039",
+        "dimension": "Outer Dia 140 mm, Back Dia 85 mm",
+        "wattage": "9 Watt / 27 Watt",
+        "image": "/assets/products/al039-full-ss-spot-fountain-light.jpg"
       },
       {
-        "code": "HF042",
-        "dimension": "Back Dia 95mm, Outer Dia 140mm, Length 110mm",
-        "wattage": "12 Watt / 36 Watt"
+        "code": "AL040",
+        "dimension": "Outer Dia 140 mm, Back Dia 85 mm",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al040-full-ss-spot-fountain-light.jpg"
       }
     ],
     "applications": [
-      "Architectural Fountains",
-      "Public Plaza Water Features",
-      "Musical Fountains",
-      "Pond Water Jets",
-      "Resort Fountains"
-    ],
+      "Large Architectural Fountains",
+      "Musical Fountain Installations",
+      "Public Fountain Lighting",
+      "Commercial Water Displays"
+],
     "features": [
-      "Heavy-duty marine stainless steel body engineered for high water pressure",
-      "Precision-engineered stand bracket allows 180° tilt adjustment",
-      "Cree & Edison high-flux LED emitters for intense water column punch",
-      "Full IP68 submersible certification with double sealed cable entry",
-      "Wide variety of optical beam angles from narrow 10° spot to wide 90° flood"
+      "All stainless steel marine grade construction resistant to turbulence and vibration",
+      "Concentrated beam angles for deep water jet penetration",
+      "Submersible IP68 waterproof cable connection with Poly Cab wire",
+      "High performance Cree/Edison LED emitters"
     ],
     "isFeatured": true
   },
   {
-    "id": "hf043-hf047-stand-spot",
-    "code": "HF043 - HF047",
-    "name": "Spot Fountain Stand Light",
-    "slug": "spot-fountain-stand-light-hf043-hf047",
+    "id": "al041-al052-ss-spot",
+    "code": "AL041 - AL052",
+    "name": "SS Spot Fountain Light",
+    "slug": "ss-spot-fountain-light-al041-al052",
     "category": "fountain-lighting",
     "categorySlug": "fountain-lighting",
     "categoryName": "Fountain Lighting",
-    "subCategory": "Fountain Lights",
-    "shortDescription": "Compact circular stand-mounted fountain spot lights available in multiple diameters and wattages up to 36W.",
-    "description": "Constructed from SS 304/316 or aluminium plate model with a sturdy circular disc stand base. Designed for quick placement on fountain basin floors or tiered cascade trays, casting focused or broad illumination on dancing fountains and geysers.",
-    "image": "/assets/products/hf046-spot-fountain-stand-light.webp",
+    "subCategory": "SS Spot Fountain Lights",
+    "shortDescription": "High-output stainless steel and pressure die casting spot fountain lights available in 5 stylish body finishes.",
+    "description": "The AQUALUXIS LIGHT SS Spot Fountain Light series spans 12 precision models crafted with SS 304/316 and pressure die-cast housings. Offering directional swivel adjustment, multi-wattage configurations up to 36W, and five stylish body finishes for discerning landscape architects and fountain designers.",
+    "image": "/assets/products/al041-ss-spot-fountain-light.jpg",
     "gallery": [
-      "/assets/products/hf046-spot-fountain-stand-light.webp",
-      "/assets/products/hf043-spot-fountain-stand-light.webp",
-      "/assets/products/hf044-spot-fountain-stand-light.webp",
-      "/assets/products/hf045-spot-fountain-stand-light.webp",
-      "/assets/products/hf047-spot-fountain-stand-light.webp"
-    ],
+      "/assets/products/al041-ss-spot-fountain-light.jpg",
+      "/assets/products/al042-ss-spot-fountain-light.jpg",
+      "/assets/products/al043-ss-spot-fountain-light.jpg",
+      "/assets/products/al044-ss-spot-fountain-light.jpg",
+      "/assets/products/al045-ss-spot-fountain-light.jpg",
+      "/assets/products/al046-ss-spot-fountain-light.jpg",
+      "/assets/products/al047-ss-spot-fountain-light.jpg",
+      "/assets/products/al048-ss-spot-fountain-light.jpg",
+      "/assets/products/al049-ss-spot-fountain-light.jpg",
+      "/assets/products/al050-ss-spot-fountain-light.jpg"
+],
     "specifications": {
-      "Body Material": "SS 304 / 316 / Aluminium (Plate Model)",
+      "Body Material": "SS 304 / 316 / Pressure Die Casting Body",
       "Lens": "PC Glass",
-      "LED Chip": "Power LED Edison",
-      "Protection Class": "IP68 Submersible",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Stand Mounted Disc System",
-      "Beam Angle": "10°, 20°, 30°, 40°, 45°, 60°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "WW, CW, RGB, Red, Blue, Green",
-      "Available Wattages": "3W, 6W, 9W, 12W, 18W, 27W, 36W",
-      "Dimensions": "Dia 3\" to Dia 6\" (Thickness 22mm - 1\")"
+      "LED Chip": "CREE / Edison",
+      "Protection Class": "IP68 Submersible Waterproof",
+      "Wire": "Poly Cab (1 Mtr Wire)",
+      "Beam Angle": "10\u00b0, 20\u00b0, 30\u00b0, 40\u00b0, 45\u00b0, 60\u00b0, 90\u00b0",
+      "Body Finishes": "Available in 5 Stylish Body Finishes",
+      "Color Options": "WW (2700\u20133000K), NW (4000\u20134500K), CW (6000\u20136500K), Red, Blue, Green, RGB",
+      "Dimensions": "Dia 3\" to 6\" (Outer Dia up to 140 mm)"
     },
     "variants": [
       {
-        "code": "HF043",
-        "dimension": "Dia 3\", Thickness 22mm",
-        "wattage": "3W / 9W"
+        "code": "AL041",
+        "dimension": "Dia 3\", Thickness 22 mm",
+        "wattage": "3 Watt / 9 Watt",
+        "image": "/assets/products/al041-ss-spot-fountain-light.jpg"
       },
       {
-        "code": "HF044",
-        "dimension": "Dia 4\", Thickness 22mm",
-        "wattage": "6W / 18W"
+        "code": "AL042",
+        "dimension": "Dia 4\", Thickness 22 mm",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al042-ss-spot-fountain-light.jpg"
       },
       {
-        "code": "HF045",
-        "dimension": "Back Dia 5\", Depth 1\"",
-        "wattage": "9W / 27W"
-      },
-      {
-        "code": "HF046",
+        "code": "AL043",
         "dimension": "Dia 5\", Thickness 1\"",
-        "wattage": "12W / 36W"
+        "wattage": "9 Watt / 27 Watt",
+        "image": "/assets/products/al043-ss-spot-fountain-light.jpg"
       },
       {
-        "code": "HF047",
+        "code": "AL044",
+        "dimension": "Dia 5\", Thickness 1\"",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al044-ss-spot-fountain-light.jpg"
+      },
+      {
+        "code": "AL045",
         "dimension": "Dia 6\", Thickness 1\"",
-        "wattage": "18W"
+        "wattage": "18 Watt",
+        "image": "/assets/products/al045-ss-spot-fountain-light.jpg"
+      },
+      {
+        "code": "AL046",
+        "dimension": "Outer Dia 85 mm, Back Dia 60 mm",
+        "wattage": "3 Watt / 9 Watt",
+        "image": "/assets/products/al046-ss-spot-fountain-light.jpg"
+      },
+      {
+        "code": "AL047",
+        "dimension": "Outer Dia 140 mm, Back Dia 110 mm",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al047-ss-spot-fountain-light.jpg"
+      },
+      {
+        "code": "AL048",
+        "dimension": "Outer Dia 140 mm, Back Dia 110 mm",
+        "wattage": "9 Watt / 27 Watt",
+        "image": "/assets/products/al048-ss-spot-fountain-light.jpg"
+      },
+      {
+        "code": "AL049",
+        "dimension": "Outer Dia 140 mm, Back Dia 110 mm",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al049-ss-spot-fountain-light.jpg"
+      },
+      {
+        "code": "AL050",
+        "dimension": "Outer Dia 120 mm, Back Dia 85 mm",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al050-ss-spot-fountain-light.jpg"
+      },
+      {
+        "code": "AL051",
+        "dimension": "Outer Dia 120 mm, Back Dia 85 mm",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al049-ss-spot-fountain-light.jpg"
+      },
+      {
+        "code": "AL052",
+        "dimension": "Outer Dia 120 mm, Back Dia 85 mm",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al050-ss-spot-fountain-light.jpg"
       }
     ],
     "applications": [
-      "Circular Fountains",
-      "Tiered Stone Fountains",
-      "Reflecting Pools",
-      "Garden Water Features"
-    ],
+      "Decorative Fountains",
+      "Garden Fountains",
+      "Resort Fountains",
+      "Landscape Water Installations"
+],
     "features": [
-      "Stable base stand allows fast positioning without drilling basin floors",
-      "Compact low-profile thickness (22mm to 1\") minimizes water disruption",
-      "Edison Power LEDs engineered for maximum photometric output underwater",
-      "IP68 submersible protection with chemical-resistant PC glass",
-      "Available in monochromatic warm/cool white or dynamic RGB configurations"
-    ],
-    "isFeatured": false
-  },
-  {
-    "id": "hf052-hf057-nozzle-hole",
-    "code": "HF052 - HF057",
-    "name": "Nozzle Fountain Light (Center Hole / Thread)",
-    "slug": "nozzle-fountain-light-center-hole-hf052-hf057",
-    "category": "fountain-lighting",
-    "categorySlug": "fountain-lighting",
-    "categoryName": "Fountain Lighting",
-    "subCategory": "Fountain Light Fittings",
-    "shortDescription": "Donut-type center-hole fountain light mounted directly onto nozzle supply pipes for 360° illuminated water columns.",
-    "description": "The center-hole threaded fountain luminaire mounts directly around the fountain nozzle, aligning the light beam symmetrically with the emerging water jet. This ensures 360-degree uniform color infusion directly through the core of the water column.",
-    "image": "/assets/products/hf057-nozzle-fountain-light.webp",
-    "gallery": [
-      "/assets/products/hf057-nozzle-fountain-light.webp",
-      "/assets/products/hf052-nozzle-fountain-light.webp",
-      "/assets/products/hf053-nozzle-fountain-light.webp",
-      "/assets/products/hf054-nozzle-fountain-light.webp",
-      "/assets/products/hf055-nozzle-fountain-light.webp",
-      "/assets/products/hf056-nozzle-fountain-light.webp"
-    ],
-    "specifications": {
-      "Body Material": "SS 304 / 316 / Aluminium (Plate Model)",
-      "Lens": "PC Glass Sealed Ring",
-      "LED Chip": "Power LED Edison",
-      "Protection Class": "IP68 Submersible",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Threaded Center Hole / Stand Mounted System",
-      "Thread Options": "1/2\", 3/4\", 1\" Thread Center Hole",
-      "Beam Angle": "10°, 20°, 30°, 40°, 45°, 60°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "WW, CW, RGB, Red, Blue, Green",
-      "Available Wattages": "3W, 4W, 5W, 6W, 9W, 12W, 15W, 18W, 27W, 36W",
-      "Dimensions": "Dia 4\", 5\", 6\" (Thickness 32mm)"
-    },
-    "variants": [
-      {
-        "code": "HF052",
-        "dimension": "Dia 4\", Thread 3/4\", Thickness 32mm",
-        "wattage": "3W / 9W"
-      },
-      {
-        "code": "HF053",
-        "dimension": "Dia 4\", Thread 1/2\", Thickness 32mm",
-        "wattage": "4W / 12W"
-      },
-      {
-        "code": "HF054",
-        "dimension": "Dia 4\", Thread 1/2\", Thickness 32mm",
-        "wattage": "5W / 15W"
-      },
-      {
-        "code": "HF055",
-        "dimension": "Dia 5\", Thread 1\", Thickness 32mm",
-        "wattage": "6W / 18W"
-      },
-      {
-        "code": "HF056",
-        "dimension": "Dia 5\", Thread 1\", Thickness 32mm",
-        "wattage": "9W / 27W"
-      },
-      {
-        "code": "HF057",
-        "dimension": "Dia 6\", Thread 1\", Thickness 32mm",
-        "wattage": "12W / 36W"
-      }
-    ],
-    "applications": [
-      "Dry Deck Fountains",
-      "Center Jet Fountains",
-      "Musical Fountains",
-      "Plaza Fountains"
-    ],
-    "features": [
-      "Center hole allows the water nozzle to pass directly through the luminaire",
-      "Perfect optical alignment produces intense internal light piping in the water stream",
-      "Compatible with standard 1/2\", 3/4\", and 1\" plumbing threads",
-      "Robust SS 304/316 casing with complete IP68 underwater sealing",
-      "Available with multi-color DMX/RGB compatibility for sequenced shows"
+      "Available in 5 stylish body finishes for architectural harmony",
+      "Pressure die casting and marine stainless steel dual durability",
+      "High power Cree / Edison LED chips producing vibrant saturated colors",
+      "Adjustable aiming brackets for precision optical targeting"
     ],
     "isFeatured": true
   },
   {
-    "id": "hf058-hf061-adjustable-nozzle",
-    "code": "HF058 - HF061",
-    "name": "Adjustable Center-Hole Nozzle Fountain Light",
-    "slug": "adjustable-center-hole-nozzle-fountain-light-hf058-hf061",
+    "id": "al053-al057-nozzle",
+    "code": "AL053 - AL057",
+    "name": "Nozzle Fountain Light",
+    "slug": "nozzle-fountain-light-al053-al057",
     "category": "fountain-lighting",
     "categorySlug": "fountain-lighting",
     "categoryName": "Fountain Lighting",
-    "subCategory": "LED Fountain Lights",
-    "shortDescription": "Adjustable 1.5\" center hole fountain fixture for angled jets and customized water trajectories.",
-    "description": "Featuring an adjustable 1.5-inch center aperture, the HF058–HF061 series permits angling of the nozzle jet while keeping the luminaire firmly seated. Ideal for arching water streams, multi-tier sprays, and dynamic fountain choreography.",
-    "image": "/assets/products/hf061-adjustable-nozzle-fountain-light.webp",
+    "subCategory": "Nozzle Fountain Lights",
+    "shortDescription": "Center-threaded underwater donut fixture designed for direct mounting over fountain nozzles and spray heads.",
+    "description": "The AQUALUXIS LIGHT Nozzle Fountain Light features a central threaded opening allowing fountain nozzles to pass directly through the luminaire. Water jets emerge surrounded by high-intensity Cree and Edison LED illumination, delivering dazzling columns of colored light with zero shadowing.",
+    "image": "/assets/products/al053-nozzle-fountain-light.jpg",
     "gallery": [
-      "/assets/products/hf061-adjustable-nozzle-fountain-light.webp",
-      "/assets/products/hf058-adjustable-nozzle-fountain-light.webp",
-      "/assets/products/hf059-adjustable-nozzle-fountain-light.webp",
-      "/assets/products/hf060-adjustable-nozzle-fountain-light.webp"
-    ],
+      "/assets/products/al053-nozzle-fountain-light.jpg",
+      "/assets/products/al054-nozzle-fountain-light.jpg",
+      "/assets/products/al055-nozzle-fountain-light.jpg",
+      "/assets/products/al056-nozzle-fountain-light.jpg",
+      "/assets/products/al057-nozzle-fountain-light.jpg"
+],
     "specifications": {
-      "Body Material": "SS 304 / 316 / Aluminium (Plate Model)",
+      "Body Material": "SS 304 / 316 / Aluminium (Flat Model)",
       "Lens": "PC Glass",
-      "LED Chip": "Power LED Edison",
-      "Protection Class": "IP68 Submersible",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Mounting": "Stand Mounted System / Center Hole Fit",
-      "Center Hole": "1.5\" (Adjustable Mechanism)",
-      "Beam Angle": "10°, 20°, 30°, 40°, 45°, 60°",
-      "Wire": "Poly Cab 1 Metre Wire",
-      "Color Options": "WW, CW, RGB, Red, Blue, Green",
-      "Available Wattages": "3W, 6W, 9W, 12W, 18W, 27W, 36W",
-      "Dimensions": "Outer 5\", Length 2\""
+      "LED Chip": "CREE / Edison",
+      "Protection Class": "IP68 Submersible Waterproof",
+      "Wire": "Poly Cab (1 Mtr Wire)",
+      "Beam Angle": "10\u00b0, 20\u00b0, 30\u00b0, 40\u00b0, 45\u00b0, 60\u00b0, 90\u00b0",
+      "Thread Specifications": "1/2\" (AL053\u2013AL055) and 1\" (AL056\u2013AL057)",
+      "Color Options": "WW (2700\u20133000K), NW (4000\u20134500K), CW (6000\u20136500K), Red, Blue, Green, RGB",
+      "Dimensions": "Dia 4\" to 5\" (Thickness 32 mm)"
     },
     "variants": [
       {
-        "code": "HF058",
-        "dimension": "Outer 5\", Center Hole 1.5\", Length 2\"",
-        "wattage": "3W / 9W"
+        "code": "AL053",
+        "dimension": "Dia 4\", Thread 1/2\", Thickness 32 mm",
+        "wattage": "3 Watt / 9 Watt",
+        "image": "/assets/products/al053-nozzle-fountain-light.jpg"
       },
       {
-        "code": "HF059",
-        "dimension": "Outer 5\", Center Hole 1.5\", Length 2\"",
-        "wattage": "6W / 18W"
+        "code": "AL054",
+        "dimension": "Dia 4\", Thread 1/2\", Thickness 32 mm",
+        "wattage": "4 Watt / 12 Watt",
+        "image": "/assets/products/al054-nozzle-fountain-light.jpg"
       },
       {
-        "code": "HF060",
-        "dimension": "Outer 5\", Center Hole 1.5\", Length 2\"",
-        "wattage": "9W / 27W"
+        "code": "AL055",
+        "dimension": "Dia 4\", Thread 1/2\", Thickness 32 mm",
+        "wattage": "5 Watt / 15 Watt",
+        "image": "/assets/products/al055-nozzle-fountain-light.jpg"
       },
       {
-        "code": "HF061",
-        "dimension": "Outer 5\", Center Hole 1.5\", Length 2\"",
-        "wattage": "12W / 36W"
+        "code": "AL056",
+        "dimension": "Dia 5\", Thread 1\", Thickness 32 mm",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al056-nozzle-fountain-light.jpg"
+      },
+      {
+        "code": "AL057",
+        "dimension": "Dia 5\", Thread 1\", Thickness 32 mm",
+        "wattage": "9 Watt / 27 Watt",
+        "image": "/assets/products/al057-nozzle-fountain-light.jpg"
       }
     ],
     "applications": [
-      "Arching Jet Fountains",
-      "Parabolic Water Features",
-      "Decorative Fountains",
-      "Resort Water Displays"
-    ],
+      "Illuminated Fountain Jets",
+      "Musical Fountain Displays",
+      "Decorative Water Features",
+      "Public Fountain Installations"
+],
     "features": [
-      "1.5-inch adjustable center collar allows precise aiming with angled water jets",
-      "Power LED Edison emitters generate intense light penetration through aeration",
-      "Solid stainless steel construction prevents vibration under high pump pressure",
-      "IP68 submersible protection suitable for permanent immersion",
-      "2-year warranty backed by AQUALUXIS LIGHT manufacturing expertise"
+      "Direct nozzle pass-through geometry for 360-degree uniform water column illumination",
+      "Standard 1/2\" and 1\" BSP thread compatibility",
+      "Ultra-durable SS 304/316 and flat aluminium body",
+      "Hermetic IP68 seal for long-term underwater submersion"
     ],
-    "isFeatured": false
+    "isFeatured": true
   },
   {
-    "id": "hf062-wall-washer",
-    "code": "HF062",
-    "name": "LED Architectural Wall Washer Light",
-    "slug": "led-architectural-wall-washer-light-hf062",
+    "id": "al058-al061-adj-nozzle",
+    "code": "AL058 - AL061",
+    "name": "Adjustable Nozzle Fountain Light",
+    "slug": "adjustable-nozzle-fountain-light-al058-al061",
+    "category": "fountain-lighting",
+    "categorySlug": "fountain-lighting",
+    "categoryName": "Fountain Lighting",
+    "subCategory": "Adjustable Nozzle Fountain Lights",
+    "shortDescription": "Articulating center-hole nozzle light with 1.5-inch pass-through and multi-angle aiming for dynamic water arches.",
+    "description": "Designed for complex water choreography and angled nozzle sprays, the AQUALUXIS LIGHT Adjustable Nozzle Fountain Light features a generous 1.5-inch center hole with internal articulating alignment. Allows the light beam to follow angled water jets precisely.",
+    "image": "/assets/products/al058-adjustable-nozzle-fountain-light.jpg",
+    "gallery": [
+      "/assets/products/al058-adjustable-nozzle-fountain-light.jpg",
+      "/assets/products/al059-adjustable-nozzle-fountain-light.jpg",
+      "/assets/products/al060-adjustable-nozzle-fountain-light.jpg",
+      "/assets/products/al061-adjustable-nozzle-fountain-light.jpg",
+      "/assets/products/al058-adjustable-nozzle-fountain-light-side.jpg"
+],
+    "specifications": {
+      "Body Material": "SS 304 / 316",
+      "Lens": "PC Glass",
+      "LED Chip": "CREE / Edison",
+      "Protection Class": "IP68 Submersible Waterproof",
+      "Wire": "Poly Cab (1 Mtr Wire)",
+      "Beam Angle": "10\u00b0, 20\u00b0, 30\u00b0, 40\u00b0, 45\u00b0, 60\u00b0, 90\u00b0",
+      "Center Hole": "1.5 Inch",
+      "Color Options": "WW (2700\u20133000K), NW (4000\u20134500K), CW (6000\u20136500K), Red, Blue, Green, RGB",
+      "Dimensions": "Outer Dia 5\", Thickness 2\""
+    },
+    "variants": [
+      {
+        "code": "AL058",
+        "dimension": "Outer 5\", Centre Hole 1.5\", Thickness 2\"",
+        "wattage": "3 Watt / 9 Watt",
+        "image": "/assets/products/al058-adjustable-nozzle-fountain-light.jpg"
+      },
+      {
+        "code": "AL059",
+        "dimension": "Outer 5\", Centre Hole 1.5\", Thickness 2\"",
+        "wattage": "6 Watt / 18 Watt",
+        "image": "/assets/products/al059-adjustable-nozzle-fountain-light.jpg"
+      },
+      {
+        "code": "AL060",
+        "dimension": "Outer 5\", Centre Hole 1.5\", Thickness 2\"",
+        "wattage": "9 Watt / 27 Watt",
+        "image": "/assets/products/al060-adjustable-nozzle-fountain-light.jpg"
+      },
+      {
+        "code": "AL061",
+        "dimension": "Outer 5\", Centre Hole 1.5\", Thickness 2\"",
+        "wattage": "12 Watt / 36 Watt",
+        "image": "/assets/products/al061-adjustable-nozzle-fountain-light.jpg"
+      }
+    ],
+    "applications": [
+      "Adjustable Fountain Jet Installations",
+      "Decorative Water Displays",
+      "Landscape Fountains",
+      "Architectural Fountains"
+],
+    "features": [
+      "1.5-inch large center hole accommodating larger commercial fountain nozzles",
+      "Articulating angular alignment mechanism to illuminate angled water plumes",
+      "Marine-grade SS 304/316 housing built for harsh aquatic conditions",
+      "High power Cree / Edison LED arrays up to 36 Watt"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "al062-wall-washer",
+    "code": "AL062",
+    "name": "LED Wall Washer Light",
+    "slug": "led-wall-washer-light-al062",
     "category": "water-feature-lighting",
     "categorySlug": "water-feature-lighting",
     "categoryName": "Water Feature Lighting",
-    "subCategory": "Architectural Water Lighting",
-    "shortDescription": "Linear architectural wall washer luminaire in lengths from 1 Ft to 12 Ft, engineered for water walls and facade illumination.",
-    "description": "Constructed from heavy-duty die-casting aluminium with an IP65 protection rating, the HF062 LED Wall Washer is tailored for cascading water walls, pool boundary perimeter features, and architectural facades. Operates on safe 12V DC power with Edison Power LEDs across wattages from 9W up to 54W.",
-    "image": "/assets/products/hf062-led-wall-washer-light.webp",
+    "subCategory": "LED Wall Washer Lights",
+    "shortDescription": "High-performance IP65 architectural linear LED wall washer for facade grazing, water walls, and textured stone features.",
+    "description": "The AQUALUXIS LIGHT LED Wall Washer Light (AL062) delivers uniform vertical light grazing across architectural surfaces, waterfalls, and exterior building facades. Engineered with die-casting aluminium, Edison Power LEDs, and precision asymmetric optics.",
+    "image": "/assets/products/al062-led-wall-washer-light.jpg",
     "gallery": [
-      "/assets/products/hf062-led-wall-washer-light.webp"
-    ],
+      "/assets/products/al062-led-wall-washer-light.jpg"
+],
     "specifications": {
-      "Body Material": "Die-Casting Aluminium Housing",
-      "Protection Class": "IP65 Weatherproof",
+      "Protection Rating": "IP65",
+      "Housing": "Die-Casting Aluminium",
       "LED Chip": "Edison Power LED",
-      "Power Input": "12V DC Safe Operating Voltage",
-      "Warranty": "2 Years Manufacturer Warranty",
-      "Beam Angle": "15° - 60° Asymmetric / Narrow / Wide",
-      "Color Options": "Warm White, Cool White, Green, Red, Blue, RGB, RGBWW, RGBCW",
-      "Available Wattages": "09 Watt - 54 Watt",
-      "Available Lengths": "1 Foot to 12 Feet (Modular)"
+      "Beam Angle": "15\u00b0 \u2013 60\u00b0",
+      "Power Input": "12V / 24V DC",
+      "Wattage Range": "9 Watt \u2013 54 Watt",
+      "Warranty": "2 Years of Warranty",
+      "Available Sizes": "1 Ft \u2013 12 Ft",
+      "Color Options": "WW (2700\u20133000K), NW (4000\u20134500K), CW (6000\u20136500K), Red, Blue, Green, RGB"
     },
     "variants": [
       {
-        "code": "HF062-1FT",
-        "dimension": "1 Ft Linear Bar",
-        "wattage": "9 Watt"
+        "code": "AL062-1FT",
+        "dimension": "Length 1 Ft (Custom Available)",
+        "wattage": "9W - 18W"
       },
       {
-        "code": "HF062-2FT",
-        "dimension": "2 Ft Linear Bar",
-        "wattage": "18 Watt"
+        "code": "AL062-2FT",
+        "dimension": "Length 2 Ft",
+        "wattage": "18W - 24W"
       },
       {
-        "code": "HF062-3FT",
-        "dimension": "3 Ft Linear Bar",
-        "wattage": "27 Watt"
+        "code": "AL062-3FT",
+        "dimension": "Length 3 Ft",
+        "wattage": "27W - 36W"
       },
       {
-        "code": "HF062-4FT",
-        "dimension": "4 Ft Linear Bar",
-        "wattage": "36 Watt"
+        "code": "AL062-4FT",
+        "dimension": "Length 4 Ft",
+        "wattage": "36W - 54W"
       },
       {
-        "code": "HF062-Custom",
-        "dimension": "Up to 12 Ft Modular",
+        "code": "AL062-CUSTOM",
+        "dimension": "Length Up to 12 Ft",
         "wattage": "Up to 54 Watt"
       }
     ],
     "applications": [
-      "Cascading Water Walls",
-      "Pool Boundary Feature Walls",
-      "Hotel Facades",
-      "Architectural Water Features",
-      "Landscape Retaining Walls"
-    ],
+      "Illuminated Water Walls",
+      "Architectural Facades",
+      "Landscape Walls",
+      "Fountain Structures"
+],
     "features": [
-      "Modular linear lengths from 1 foot up to 12 feet for uninterrupted wall grazing",
-      "Low-voltage 12V DC design for paramount electrical safety around water",
-      "Die-casting aluminium housing with high thermal conductivity and corrosion resistance",
-      "Available in RGBCW / RGBWW for rich saturated color washes and clean white temperatures",
-      "2-year warranty backed by AQUALUXIS LIGHT quality manufacturing"
+      "Die-casting aluminium housing with high thermal dissipation fins",
+      "Asymmetric and narrow beam optics (15\u00b0-60\u00b0) for clean vertical grazing",
+      "Customizable lengths from 1 Ft up to 12 Ft with 2-year warranty",
+      "IP65 rated weather protection for demanding outdoor environments"
     ],
     "isFeatured": true
   },
   {
-    "id": "hf076-water-cascade",
-    "code": "HF076",
-    "name": "SS Water Cascade Nozzle (Shear Descent)",
-    "slug": "ss-water-cascade-nozzle-hf076",
-    "category": "water-feature-lighting",
-    "categorySlug": "water-feature-lighting",
-    "categoryName": "Water Feature Lighting",
-    "subCategory": "Water Feature Lights",
-    "shortDescription": "Stainless steel shear descent waterfall spillway creating a smooth, crystal-clear curtain of falling water into pools.",
-    "description": "Manufactured from high-grade stainless steel, the HF076 Water Cascade Nozzle produces an elegant, unbroken sheet of falling water. Engineered for embedded wall installation in swimming pools, courtyard water features, and luxury landscape walls.",
-    "image": "/assets/products/hf076-water-cascade-nozzle.webp",
+    "id": "al063-umbrella-nozzle",
+    "code": "AL063",
+    "name": "Umbrella / Bell Nozzle",
+    "slug": "umbrella-bell-nozzle-al063",
+    "category": "fountain-lighting",
+    "categorySlug": "fountain-lighting",
+    "categoryName": "Fountain Lighting",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Precision chrome-plated brass nozzle producing an elegant transparent bell/umbrella laminar water sheet.",
+    "description": "The AQUALUXIS LIGHT Umbrella / Bell Nozzle (AL063) shapes water into a serene, transparent laminar dome resembling an open mushroom or umbrella canopy. Manufactured in chrome-plated brass for smooth, quiet, splash-free indoor and outdoor fountain features.",
+    "image": "/assets/products/al063-umbrella-bell-nozzle.jpg",
     "gallery": [
-      "/assets/products/hf076-water-cascade-nozzle.webp"
-    ],
+      "/assets/products/al063-umbrella-bell-nozzle.jpg"
+],
     "specifications": {
-      "Housing": "SS 304 / 316 Stainless Steel",
-      "Nozzle Type": "Water Fall / Cascade Spillway",
-      "Power / Flow": "As Per Pump (Pressure) Flow",
-      "Thread Inlet": "1\" / 1.5\" Connection",
-      "Water Effect": "Continuous Crystal Clear Water Curtain",
-      "Application": "Pool Feature Walls & Landscape Spouts"
+      "Nozzle Type": "Umbrella Nozzle (Mushroom / Bell)",
+      "Housing": "Brass with Chrome Plated",
+      "Thread": "1 Inch",
+      "Height": "8 Inch",
+      "Power / Flow": "As per pump (pressure) flow"
     },
     "variants": [
       {
-        "code": "HF076-1IN",
-        "dimension": "Width 300mm - 1200mm, Thread 1\"",
-        "wattage": "Flow Dependent"
+        "code": "AL063",
+        "dimension": "Height 8\", Thread 1\"",
+        "wattage": "Flow as per pump pressure"
+      }
+    ],
+    "applications": [
+      "Umbrella-Shaped Water Displays",
+      "Bell Fountain Installations",
+      "Garden & Landscape Fountains",
+      "Decorative Resort Fountains"
+],
+    "features": [
+      "Silent laminar umbrella water veil with zero splashing",
+      "Solid brass construction with high-luster chrome plating",
+      "Standard 1\" thread connection for simple installation",
+      "Adjustable water film thickness via top cap adjustment"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "al064-foam-nozzle",
+    "code": "AL064",
+    "name": "Foam Nozzle",
+    "slug": "foam-nozzle-al064",
+    "category": "fountain-lighting",
+    "categorySlug": "fountain-lighting",
+    "categoryName": "Fountain Lighting",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Aerated bubbling foam nozzle producing a lively, frothy white water plume with superior wind stability.",
+    "description": "The AQUALUXIS LIGHT Foam Nozzle (AL064) draws air into the water stream using the Venturi effect to produce a dense, high-visibility frothy white foam column. Highly wind-stable and strongly responsive to underwater illumination.",
+    "image": "/assets/products/al064-foam-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al064-foam-nozzle.jpg"
+],
+    "specifications": {
+      "Nozzle Type": "Foam Nozzle",
+      "Housing": "Brass with Chrome Plated",
+      "Thread": "1 Inch",
+      "Height": "155 mm",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL064",
+        "dimension": "Height 155 mm, Thread 1\"",
+        "wattage": "Flow as per pump pressure"
+      }
+    ],
+    "applications": [
+      "Aerated Foam Fountain Displays",
+      "Decorative Water Jets",
+      "Landscape Fountains",
+      "Public Fountain Installations"
+],
+    "features": [
+      "Produces dense aerated bubbling white water with exceptional light reflection",
+      "Heavy-duty chrome plated brass body built for long service life",
+      "High wind resistance compared to standard single jet nozzles",
+      "Compact 155mm height with standard 1-inch inlet"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "al065-finger-jet",
+    "code": "AL065",
+    "name": "Finger Jet Nozzle",
+    "slug": "finger-jet-nozzle-al065",
+    "category": "fountain-lighting",
+    "categorySlug": "fountain-lighting",
+    "categoryName": "Fountain Lighting",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Multi-jet finger nozzle creating parabolic water arches in 7, 10, 14, and 20 finger configurations.",
+    "description": "The AQUALUXIS LIGHT Finger Jet Nozzle (AL065) discharges precision parabolic crystal streams radiating gracefully in a fan or arch shape. Available in 7, 10, 14, and 20 finger spray configurations crafted in chrome-plated brass.",
+    "image": "/assets/products/al065-finger-jet-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al065-finger-jet-nozzle.jpg",
+      "/assets/products/al065-finger-jet-nozzle-cluster-1.jpg",
+      "/assets/products/al065-finger-jet-nozzle-cluster-2.jpg"
+    ],
+    "specifications": {
+      "Nozzle Type": "Finger Nozzle",
+      "Housing": "Brass with Chrome Plated",
+      "Thread": "1 Inch",
+      "Height": "90 mm",
+      "Available Sizes": "7 Finger, 10 Finger, 14 Fingers, 20 Fingers",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL065-7F",
+        "dimension": "7 Finger Jets, Height 90 mm, Thread 1\"",
+        "wattage": "Flow as per pump pressure",
+        "image": "/assets/products/al065-finger-jet-nozzle.jpg"
       },
       {
-        "code": "HF076-1.5IN",
-        "dimension": "Width 300mm - 1200mm, Thread 1.5\"",
-        "wattage": "Flow Dependent"
-      }
-    ],
-    "applications": [
-      "Swimming Pool Feature Walls",
-      "Hotels & Resorts",
-      "Courtyard Water Walls",
-      "Residential Pools"
-    ],
-    "features": [
-      "Precision-engineered weir lip delivers a smooth, glass-like water sheet",
-      "Heavy-duty marine stainless steel construction resistant to pool sanitizers",
-      "Integrated internal baffles ensure uniform water flow across full width",
-      "Can be backlit with AQUALUXIS LIGHT LED wall washers for dramatic evening illumination"
-    ],
-    "isFeatured": true
-  },
-  {
-    "id": "hf078-cobra-waterfall",
-    "code": "HF078",
-    "name": "Stainless Steel Cobra Waterfall Nozzle",
-    "slug": "stainless-steel-cobra-waterfall-nozzle-hf078",
-    "category": "water-feature-lighting",
-    "categorySlug": "water-feature-lighting",
-    "categoryName": "Water Feature Lighting",
-    "subCategory": "Water Feature Lights",
-    "shortDescription": "Iconic architectural curved cobra pool waterfall spout crafted in polished stainless steel with a 2-inch inlet.",
-    "description": "The Cobra Nozzle is an architectural poolside centerpiece that delivers a therapeutic, wide curtain of cascading water directly into the swimming pool. Engineered from premium stainless steel with polished curvature and standard 2-inch threaded base.",
-    "image": "/assets/products/hf078-cobra-waterfall-nozzle.webp",
-    "gallery": [
-      "/assets/products/hf078-cobra-waterfall-nozzle.webp"
-    ],
-    "specifications": {
-      "Housing": "SS 304 / 316 Polished Stainless Steel",
-      "Nozzle Type": "Water Fall / Pool Deck Spout",
-      "Power / Flow": "As Per Pump (Pressure) Flow",
-      "Thread Connection": "2\" Standard Inlet",
-      "Water Pattern": "Wide Curved Cascading Waterfall Curtain",
-      "Installation": "Pool Deck Anchor Mounting"
-    },
-    "variants": [
+        "code": "AL065-10F",
+        "dimension": "10 Finger Jets, Height 90 mm, Thread 1\"",
+        "wattage": "Flow as per pump pressure",
+        "image": "/assets/products/al065-finger-jet-nozzle-cluster-1.jpg"
+      },
       {
-        "code": "HF078-STD",
-        "dimension": "Standard Height 800mm, Width 500mm, Thread 2\"",
-        "wattage": "Flow Dependent"
-      }
-    ],
-    "applications": [
-      "Resort Swimming Pools",
-      "Private Luxury Pool Decks",
-      "Hydrotherapy Spas",
-      "Clubhouses"
-    ],
-    "features": [
-      "Stunning architectural cobra curve adds luxury presence to any pool edge",
-      "High-volume cascade provides invigorating neck and shoulder hydro-massage",
-      "Marine-grade stainless steel resisting chlorinated and saltwater corrosion",
-      "Sturdy flanged base for secure, rigid poolside installation"
-    ],
-    "isFeatured": true
-  },
-  {
-    "id": "hf080-acrylic-cobra",
-    "code": "HF080",
-    "name": "Acrylic Cobra Nozzle with LED Illumination",
-    "slug": "acrylic-cobra-nozzle-illuminated-hf080",
-    "category": "water-feature-lighting",
-    "categorySlug": "water-feature-lighting",
-    "categoryName": "Water Feature Lighting",
-    "subCategory": "Water Feature Lights",
-    "shortDescription": "Crystal-clear acrylic cobra waterfall that channels internal LED illumination directly into the flowing water stream.",
-    "description": "Crafted from optical-grade transparent acrylic with a heavy-duty mounting base and 2-inch thread connection. Designed to accommodate integrated AQUALUXIS LIGHT underwater LED lighting, which illuminates the entire acrylic arch and transmits vibrant glowing colors through the cascading water sheet.",
-    "image": "/assets/products/hf080-acrylic-cobra-nozzle.jpg",
-    "gallery": [
-      "/assets/products/hf080-acrylic-cobra-nozzle.jpg",
-      "/assets/products/hf080-action-main.jpg",
-      "/assets/products/hf080-action-water-flow.jpg",
-      "/assets/products/hf080-action-lighting-glow.jpg"
-    ],
-    "specifications": {
-      "Housing": "Optical-Grade Cast Acrylic + Sealed Flange",
-      "Nozzle Type": "Illuminated Waterfall Arc",
-      "Power / Flow": "As Per Pump (Pressure) Flow",
-      "Thread Inlet": "2\" Plumbing Connection",
-      "Lighting Integration": "Supports Internal HUMA LED Emitter",
-      "Water Effect": "Internally Illuminated Glowing Cascade"
-    },
-    "variants": [
+        "code": "AL065-14F",
+        "dimension": "14 Finger Jets, Height 90 mm, Thread 1\"",
+        "wattage": "Flow as per pump pressure",
+        "image": "/assets/products/al065-finger-jet-nozzle-cluster-1.jpg"
+      },
       {
-        "code": "HF080",
-        "dimension": "Cobra Curve, Thread 2\"",
-        "wattage": "LED Integrated"
+        "code": "AL065-20F",
+        "dimension": "20 Finger Jets, Height 90 mm, Thread 1\"",
+        "wattage": "Flow as per pump pressure",
+        "image": "/assets/products/al065-finger-jet-nozzle-cluster-2.jpg"
       }
     ],
     "applications": [
-      "Modern Designer Pools",
-      "Nightclub & Lounge Water Decks",
-      "Luxury Resort Pools",
-      "Architectural Water Installations"
-    ],
+      "Multiple Narrow Water Jet Displays",
+      "Interactive Fountain Installations",
+      "Musical Fountain Arrangements",
+      "Decorative Water Features"
+],
     "features": [
-      "Crystal-clear transparent acrylic body creates a floating water illusion",
-      "Integrated lighting chamber delivers stunning nighttime glow effects",
-      "Engineered to withstand continuous outdoor UV exposure and treated pool water",
-      "Standard 2-inch plumbing connection for straightforward integration"
+      "Delivers clear crystalline laminar finger jets in delicate radiating arcs",
+      "Choice of 7, 10, 14, or 20 individual precision-bored jets",
+      "Solid brass with mirror chrome plating for premium corrosion resistance",
+      "Compact 90 mm profile with standard 1-inch female BSP thread"
     ],
     "isFeatured": true
   },
   {
-    "id": "hf063-umbrella-nozzle",
-    "code": "HF063",
-    "name": "Umbrella Nozzle / Bell Nozzle (Mushroom / Bell)",
-    "slug": "umbrella-bell-nozzle-hf063",
+    "id": "al066-long-foam-nozzle",
+    "code": "AL066",
+    "name": "Long Foam Nozzle",
+    "slug": "long-foam-nozzle-al066",
     "category": "fountain-lighting",
     "categorySlug": "fountain-lighting",
     "categoryName": "Fountain Lighting",
-    "subCategory": "Fountain Light Fittings",
-    "shortDescription": "Brass with chrome plating fountain nozzle forming a transparent, silent bell or mushroom film of water.",
-    "description": "The HF063 creates a smooth, whisper-quiet transparent dome or bell of falling water. Manufactured from chrome-plated brass with a 1-inch thread, height of 8 inches, and adjustable top disc to control bell thickness and diameter.",
-    "image": "/assets/products/hf063-umbrella-nozzle.webp",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Extended barrel foam nozzle producing soaring, high-volume columnar aerated geysers.",
+    "description": "Engineered with an elongated mixing chamber, the AQUALUXIS LIGHT Long Foam Nozzle (AL066) produces majestic, high-altitude frothy water columns. The extended barrel intensifies air-water aeration for high visibility in open plaza installations.",
+    "image": "/assets/products/al066-long-foam-nozzle.jpg",
     "gallery": [
-      "/assets/products/hf063-umbrella-nozzle.webp"
-    ],
+      "/assets/products/al066-long-foam-nozzle.jpg"
+],
     "specifications": {
-      "Housing": "Brass with Chrome Plating",
-      "Nozzle Type": "Umbrella Nozzle (Mushroom / Bell)",
-      "Power / Flow": "As Per Pump (Pressure) Flow",
-      "Thread Connection": "1\" Male Thread",
-      "Height": "8 Inch (200 mm)",
-      "Effect": "Smooth Glassy Water Dome"
+      "Nozzle Type": "Foam Nozzle (Long Barrel)",
+      "Housing": "Brass with Chrome Plated",
+      "Thread": "1 Inch",
+      "Power / Flow": "As per pump (pressure) flow"
     },
     "variants": [
       {
-        "code": "HF063",
-        "dimension": "Height 8\", Thread 1\"",
-        "wattage": "Flow Dependent"
+        "code": "AL066",
+        "dimension": "Long Barrel Profile, Thread 1\"",
+        "wattage": "Flow as per pump pressure"
       }
     ],
     "applications": [
-      "Indoor Fountains",
-      "Wind-Protected Ponds",
-      "Peaceful Garden Water Features",
-      "Hotel Lobbies"
-    ],
+      "Continuous Foam Fountain Displays",
+      "Aerated Water Features",
+      "Decorative Fountains",
+      "Landscape Installations"
+],
     "features": [
-      "Extremely low splash and quiet operation ideal for courtyards and indoor spaces",
-      "Heavy-gauge solid brass with mirror chrome plating for decades of service",
-      "Adjustable deflection disc to tune dome diameter and film thickness",
-      "Pairs seamlessly with AQUALUXIS LIGHT center-hole nozzle fountain lights"
+      "Extended aeration chamber generating monumental white foam plumes",
+      "Superior wind stability preserving spray structure in blustery conditions",
+      "Solid brass construction with heavy-duty chrome plating",
+      "Standard 1-inch inlet connection"
     ],
     "isFeatured": false
   },
   {
-    "id": "hf064-foam-nozzle",
-    "code": "HF064",
-    "name": "Foam Jet Fountain Nozzle",
-    "slug": "foam-jet-fountain-nozzle-hf064",
+    "id": "al067-geyser-nozzle",
+    "code": "AL067",
+    "name": "Geyser Nozzle",
+    "slug": "geyser-nozzle-al067",
     "category": "fountain-lighting",
     "categorySlug": "fountain-lighting",
     "categoryName": "Fountain Lighting",
-    "subCategory": "Fountain Light Fittings",
-    "shortDescription": "Aerated bubbling foam nozzle that creates a thick, frothy, high-visibility white water column.",
-    "description": "Constructed from chrome-plated brass with side air aspiration ports, the HF064 foam nozzle mixes air with water to produce a dense, frothy white water jet that contrasts magnificently against dark surroundings and illuminates with spectacular brilliance under AQUALUXIS LIGHT LED lights.",
-    "image": "/assets/products/hf064-foam-nozzle.webp",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Water-level dependent cascade jet nozzle creating high-impact erupting water plumes.",
+    "description": "The AQUALUXIS LIGHT Geyser Nozzle (AL067) utilizes the surrounding pool water to create powerful, turbulent erupting geysers. Its conical eruption delivers dynamic acoustic presence and dramatic visual weight in commercial fountain basins.",
+    "image": "/assets/products/al067-geyser-nozzle.jpg",
     "gallery": [
-      "/assets/products/hf064-foam-nozzle.webp"
-    ],
+      "/assets/products/al067-geyser-nozzle.jpg"
+],
     "specifications": {
-      "Housing": "Brass with Chrome Plating",
-      "Nozzle Type": "Foam Nozzle / Aerated Column",
-      "Power / Flow": "As Per Pump (Pressure) Flow",
-      "Thread Connection": "1\" Standard Thread",
-      "Height": "155 mm",
-      "Effect": "Rich White Aerated Geyser Foam"
+      "Nozzle Type": "Cascade Jet Nozzle / Geyser Nozzle",
+      "Housing": "Brass with Chrome Plated",
+      "Thread": "1 Inch",
+      "Power / Flow": "As per pump (pressure) flow"
     },
     "variants": [
       {
-        "code": "HF064",
-        "dimension": "Height 155mm, Thread 1\"",
-        "wattage": "Flow Dependent"
+        "code": "AL067",
+        "dimension": "Cascade Jet Profile, Thread 1\"",
+        "wattage": "Flow as per pump pressure"
       }
     ],
     "applications": [
+      "Vertical Water Jet Fountains",
       "Plaza Fountains",
-      "Commercial Entrances",
-      "Windy Outdoor Water Features",
-      "Shopping Centers"
-    ],
+      "Public Water Displays",
+      "Musical Fountain Installations"
+],
     "features": [
-      "Highly aerated water column reflects colored LED light with exceptional brightness",
-      "High wind stability due to water-air mixture density",
-      "Solid brass construction with protective chrome layer",
-      "Height of 155mm with standard 1\" thread for quick manifold mounting"
+      "Entrains pool water for massive conical geyser eruptions",
+      "Dynamic water sound dampening ambient urban noise",
+      "Corrosion-resistant chrome plated brass body",
+      "Standard 1-inch thread interface"
     ],
     "isFeatured": false
   },
   {
-    "id": "hf065-finger-jet",
-    "code": "HF065",
-    "name": "Finger Jet / Multi-Jet Fountain Nozzle",
-    "slug": "finger-jet-multi-jet-fountain-nozzle-hf065",
+    "id": "al068-ss-foam-nozzle",
+    "code": "AL068",
+    "name": "SS Foam Nozzle",
+    "slug": "ss-foam-nozzle-al068",
     "category": "fountain-lighting",
     "categorySlug": "fountain-lighting",
     "categoryName": "Fountain Lighting",
-    "subCategory": "Fountain Light Fittings",
-    "shortDescription": "Precision manifold nozzle with multiple individual finger jets creating a graceful parabolic fan of water rays.",
-    "description": "The HF065 Multi-Jet nozzle distributes pumped water into distinct, needle-sharp water streams arrayed in an arc. Features chrome-plated brass body, 1-inch thread connection, 90mm height, and 100mm degree spread.",
-    "image": "/assets/products/hf065-finger-jet-nozzle.webp",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Composite foam nozzle combining chrome-plated brass with black ABS engineered polymer.",
+    "description": "The AQUALUXIS LIGHT SS Foam Nozzle (AL068) features a robust composite design of chrome-plated brass and high-durability black ABS. Produces rich, highly aerated white bubbling foam jets with optimal water conservation.",
+    "image": "/assets/products/al068-ss-foam-nozzle.jpg",
     "gallery": [
-      "/assets/products/hf065-finger-jet-nozzle.webp"
-    ],
+      "/assets/products/al068-ss-foam-nozzle.jpg",
+      "/assets/products/al068-ss-foam-nozzle-detail.jpg"
+],
     "specifications": {
-      "Housing": "Brass with Chrome Plating",
-      "Nozzle Type": "Finger Nozzle / Multi-Jet Fan",
-      "Power / Flow": "As Per Pump (Pressure) Flow",
-      "Thread Connection": "1\" Thread",
-      "Height": "90 mm",
-      "Degree Spread": "100 mm Arc",
-      "Effect": "Multiple Arching Fine Water Rays"
+      "Nozzle Type": "Foam Nozzle",
+      "Housing": "Brass with Chrome Plated with Black ABS",
+      "Thread": "1 Inch",
+      "Power / Flow": "As per pump (pressure) flow"
     },
     "variants": [
       {
-        "code": "HF065",
-        "dimension": "Height 90mm, Degree 100mm, Thread 1\"",
-        "wattage": "Flow Dependent"
+        "code": "AL068",
+        "dimension": "Brass & ABS Composite, Thread 1\"",
+        "wattage": "Flow as per pump pressure"
       }
     ],
     "applications": [
-      "Pool Perimeters",
-      "Architectural Water Features",
-      "Decorative Garden Ponds"
-    ],
+      "Aerated Fountain Displays",
+      "Decorative Water Features",
+      "Resort Fountains",
+      "Landscape Fountains"
+],
     "features": [
-      "Multiple distinct water streams create lively animated water architecture",
-      "Chrome-plated solid brass ensures corrosion resistance",
-      "Compact 90mm height fits in shallow water basins and troughs",
-      "Easily illuminated from below using AQUALUXIS LIGHT spot fountain lights"
+      "Hybrid brass and durable black ABS construction",
+      "High air-to-water mixture ratio for maximum visual opacity",
+      "Resistant to scale buildup and pool chemical wear",
+      "Standard 1-inch thread for easy retrofits"
     ],
     "isFeatured": false
   },
   {
-    "id": "hf072-revolving-nozzle",
-    "code": "HF072",
-    "name": "Revolving / Rotational Fountain Nozzle",
-    "slug": "revolving-rotational-fountain-nozzle-hf072",
+    "id": "al069-tulip-nozzle",
+    "code": "AL069",
+    "name": "Tulip Nozzle",
+    "slug": "tulip-nozzle-al069",
     "category": "fountain-lighting",
     "categorySlug": "fountain-lighting",
     "categoryName": "Fountain Lighting",
-    "subCategory": "Fountain Light Fittings",
-    "shortDescription": "Hydraulic self-rotating multi-arm brass nozzle generating mesmerizing spiraling water choreography.",
-    "description": "Driven by hydraulic water pressure without requiring an electric motor, the HF072 revolves smoothly on an internal bearing, spinning multiple curved arms to weave a dynamic, intertwining spiral basket of water in the air.",
-    "image": "/assets/products/hf072-revolving-nozzle.webp",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Sculptural nozzle forming a delicate translucent tulip-flower water chalice.",
+    "description": "The AQUALUXIS LIGHT Tulip Nozzle (AL069) shapes water into an upward-curving transparent water cup resembling a blooming tulip. Elegant, low-noise, and captivating when illuminated from within by submersible LEDs.",
+    "image": "/assets/products/al069-tulip-nozzle.jpg",
     "gallery": [
-      "/assets/products/hf072-revolving-nozzle.webp"
-    ],
+      "/assets/products/al069-tulip-nozzle.jpg"
+],
     "specifications": {
-      "Housing": "Solid Brass Construction",
-      "Nozzle Type": "Revolving Nozzle / Rotational Dance Jet",
-      "Power / Flow": "As Per Pump (Pressure) Flow",
-      "Thread Connection": "1\" Standard Thread",
-      "Rotation": "Hydraulically Powered Self-Spinning",
-      "Effect": "Interlocking Spiral Water Dance"
+      "Nozzle Type": "Tulip Nozzle",
+      "Housing": "Brass with Chrome Plated",
+      "Height": "8 Inch",
+      "Thread": "1 Inch",
+      "Power / Flow": "As per pump (pressure) flow"
     },
     "variants": [
       {
-        "code": "HF072",
-        "dimension": "Multi-Arm Spiral, Thread 1\"",
-        "wattage": "Flow Dependent"
+        "code": "AL069",
+        "dimension": "Height 8\", Thread 1\"",
+        "wattage": "Flow as per pump pressure"
       }
     ],
     "applications": [
-      "Central Basin Fountains",
-      "Musical Water Features",
-      "Public Parks & Civic Plazas"
-    ],
+      "Tulip-Shaped Fountain Displays",
+      "Decorative Garden Fountains",
+      "Resort Water Features",
+      "Architectural Fountains"
+],
     "features": [
-      "Dynamic motion creates continuous visual interest without complex electrical drives",
-      "Precision-machined brass bearing ensures smooth continuous rotation",
-      "1-inch inlet fits directly into standard fountain supply pipes",
-      "Combines with color-changing RGB underwater lights for dynamic shows"
+      "Forms an exquisite translucent chalice water pattern resembling a tulip",
+      "Chrome plated brass body with fine mechanical tolerances",
+      "Quiet low-splash water movement ideal for enclosed environments",
+      "8-inch body height with 1-inch female connection"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "al070-fan-jet-nozzle",
+    "code": "AL070",
+    "name": "Fan Jet Nozzle",
+    "slug": "fan-jet-nozzle-al070",
+    "category": "fountain-lighting",
+    "categorySlug": "fountain-lighting",
+    "categoryName": "Fountain Lighting",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Wide-angle planar fan jet discharging a broad vertical sheet of crystal water.",
+    "description": "The AQUALUXIS LIGHT Fan Jet Nozzle (AL070) produces a wide, paper-thin fan sheet of water. Perfect for perimeter displays, water curtain walls, and projecting laser or light shows against falling water droplets.",
+    "image": "/assets/products/al070-fan-jet-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al070-fan-jet-nozzle.jpg"
+],
+    "specifications": {
+      "Nozzle Type": "Fan Nozzle",
+      "Housing": "Brass with Chrome Plated",
+      "Height": "3.5 Inch",
+      "Thread": "1 Inch",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL070",
+        "dimension": "Height 3.5\", Thread 1\"",
+        "wattage": "Flow as per pump pressure"
+      }
+    ],
+    "applications": [
+      "Fan-Shaped Water Displays",
+      "Decorative Water Walls",
+      "Landscape Fountains",
+      "Architectural Water Features"
+],
+    "features": [
+      "Wide planar fan angle spreading water uniformly",
+      "Solid brass with mirror chrome plating",
+      "Compact 3.5\" profile for tight basin integration",
+      "Standard 1-inch connection"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "al071-revolving-nozzle",
+    "code": "AL071",
+    "name": "Revolving Nozzle",
+    "slug": "revolving-nozzle-al071",
+    "category": "fountain-lighting",
+    "categorySlug": "fountain-lighting",
+    "categoryName": "Fountain Lighting",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Hydraulic self-rotating multi-arm brass nozzle creating spiraling dynamic water choreography.",
+    "description": "The AQUALUXIS LIGHT Revolving Nozzle (AL071) harnesses water pressure to rotate autonomously without electrical motors. Multi-angle angled jets spin in continuous rhythm, creating a mesmerizing rotating helix of water.",
+    "image": "/assets/products/al071-revolving-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al071-revolving-nozzle.jpg"
+],
+    "specifications": {
+      "Nozzle Type": "Revolving Nozzle",
+      "Housing": "Brass with Chrome Plated",
+      "Thread": "1 Inch",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL071",
+        "dimension": "Revolving Multi-Arm, Thread 1\"",
+        "wattage": "Flow as per pump pressure"
+      }
+    ],
+    "applications": [
+      "Rotating Water Displays",
+      "Dynamic Fountain Installations",
+      "Musical Fountains",
+      "Public Water Attractions"
+],
+    "features": [
+      "Autonomous hydraulic rotation driven purely by water flow",
+      "Precision mechanical bearing system for continuous reliable rotation",
+      "Chrome-plated brass construction built to withstand constant rotational forces",
+      "Standard 1-inch thread interface"
     ],
     "isFeatured": true
   },
   {
-    "id": "hf077-step-blade",
-    "code": "HF077",
-    "name": "Step Water Blade Nozzle",
-    "slug": "step-water-blade-nozzle-hf077",
-    "category": "water-feature-lighting",
-    "categorySlug": "water-feature-lighting",
-    "categoryName": "Water Feature Lighting",
-    "subCategory": "Water Feature Lights",
-    "shortDescription": "Stainless steel stepped manifold delivering multiple parallel streams of cascading water over architectural tiers.",
-    "description": "Crafted from heavy-duty stainless steel, the HF077 features segmented water slots that divide descending water into rhythmic, crisp parallel cascades. Ideal for stepped landscape walls and modern pool edge drops.",
-    "image": "/assets/products/hf077-step-water-blade-nozzle.webp",
+    "id": "al072-flower-cluster-nozzle",
+    "code": "AL072",
+    "name": "Diamond Nozzle / Flower Cluster Nozzle",
+    "slug": "diamond-flower-cluster-nozzle-al072",
+    "category": "fountain-lighting",
+    "categorySlug": "fountain-lighting",
+    "categoryName": "Fountain Lighting",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Multi-tier flower cluster nozzle generating a tiered crystalline bouquet of water jets.",
+    "description": "The AQUALUXIS LIGHT Diamond Nozzle / Flower Cluster Nozzle (AL072) discharges precision concentric water jets forming a multi-tiered crystal dome spray. Crafted from solid brass with chrome plating for fountain installations.",
+    "image": "/assets/products/al072-diamond-flower-cluster-nozzle.jpg",
     "gallery": [
-      "/assets/products/hf077-step-water-blade-nozzle.webp",
-      "/assets/products/hf077-action-villa-pool.jpg",
-      "/assets/products/hf077-action-warm-lit.jpg",
-      "/assets/products/hf077-action-rgb-lit.jpg"
+      "/assets/products/al072-diamond-flower-cluster-nozzle.jpg"
     ],
     "specifications": {
-      "Housing": "SS 304 / 316 Stainless Steel",
-      "Nozzle Type": "Water Fall / Multi-Spout Step Blade",
-      "Power / Flow": "As Per Pump (Pressure) Flow",
-      "Thread Connection": "1\" / 1.5\" Plumbing",
-      "Water Effect": "Segmented Parallel Ribbon Cascades"
+      "Model No.": "AL072",
+      "Nozzle Type": "Flower Cluster Nozzle",
+      "Power": "As per pump (pressure / flow)",
+      "Housing": "Brass with Chrome Plated",
+      "Thread": "1 Inch"
     },
     "variants": [
       {
-        "code": "HF077",
-        "dimension": "Multi-Tooth Blade, Thread 1\" / 1.5\"",
-        "wattage": "Flow Dependent"
+        "code": "AL072",
+        "dimension": "Thread 1\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al072-diamond-flower-cluster-nozzle.jpg"
       }
     ],
     "applications": [
-      "Stepped Landscape Walls",
-      "Pool Retaining Walls",
-      "Modern Courtyard Cascades"
-    ],
+      "Multi-Stream Flower Cluster Displays",
+      "Decorative Fountains",
+      "Musical Water Displays",
+      "Landscape Fountains"
+],
     "features": [
-      "Distinct architectural finger spouts create captivating visual texture",
-      "All-stainless construction ensures lifetime longevity in treated water",
-      "Dual thread sizes (1\" and 1.5\") for versatile flow balancing"
+      "Concentric multi-tiered spray pattern creating high volume visual impact",
+      "Solid brass chrome-plated body with precision-machined orifice nozzles",
+      "Spectacular illumination when paired with center-hole or spotlight fixtures",
+      "Standard 1-inch female connection"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "al073-crown-nozzle",
+    "code": "AL073",
+    "name": "Crown Nozzle",
+    "slug": "crown-nozzle-al073",
+    "category": "fountain-lighting",
+    "categorySlug": "fountain-lighting",
+    "categoryName": "Fountain Lighting",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Regal multi-jet crown nozzle available in 1\", 1/2\", 3/8\", 1/4\", and 1/8\" thread sizes.",
+    "description": "The AQUALUXIS LIGHT Crown Nozzle (AL073) shoots a radiating circle of outward-angled crystalline water jets resembling a monarch's crown. Available across five distinct sizes from miniature 1/8\" up to standard 1\" commercial fittings.",
+    "image": "/assets/products/al073-crown-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al073-crown-nozzle.jpg"
+],
+    "specifications": {
+      "Nozzle Type": "Crown Nozzle",
+      "Housing": "Brass with Chrome Plated",
+      "Available Sizes": "1\", 1/2\", 3/8\", 1/4\", 1/8\"",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL073-1IN",
+        "dimension": "Thread Size 1\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL073-05IN",
+        "dimension": "Thread Size 1/2\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL073-38IN",
+        "dimension": "Thread Size 3/8\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL073-14IN",
+        "dimension": "Thread Size 1/4\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL073-18IN",
+        "dimension": "Thread Size 1/8\"",
+        "wattage": "Flow as per pump pressure"
+      }
+    ],
+    "applications": [
+      "Crown-Shaped Water Displays",
+      "Decorative Fountains",
+      "Resort Installations",
+      "Public Fountain Displays"
+],
+    "features": [
+      "Radiating parabolic crown pattern with precision water trajectories",
+      "Extensive thread size options from 1/8\" micro to 1\" full-scale",
+      "Mirror-finish chrome over solid brass body",
+      "Excellent wind resistance and crisp geometric definition"
     ],
     "isFeatured": false
+  },
+  {
+    "id": "al074-flower-nozzle",
+    "code": "AL074",
+    "name": "Flower Nozzle",
+    "slug": "flower-nozzle-al074",
+    "category": "fountain-lighting",
+    "categorySlug": "fountain-lighting",
+    "categoryName": "Fountain Lighting",
+    "subCategory": "Fountain Nozzles",
+    "shortDescription": "Artistic flower spray nozzle forming tiered blooming floral water petal formations.",
+    "description": "The AQUALUXIS LIGHT Flower Nozzle (AL074) disperses water into outward-curving tiers resembling floral petals surrounding a central pistil jet. Made in chrome-plated brass for refined landscape and pool fountain installations.",
+    "image": "/assets/products/al074-flower-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al074-flower-nozzle.jpg"
+],
+    "specifications": {
+      "Nozzle Type": "Flower Nozzle",
+      "Housing": "Brass with Chrome Plated",
+      "Thread": "1 Inch",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL074",
+        "dimension": "Flower Pattern, Thread 1\"",
+        "wattage": "Flow as per pump pressure"
+      }
+    ],
+    "applications": [
+      "Flower-Shaped Water Displays",
+      "Decorative Garden Fountains",
+      "Landscape Water Features",
+      "Architectural Fountains"
+],
+    "features": [
+      "Forms an intricate blooming flower petal spray geometry",
+      "Precision-cast and machined chrome plated brass housing",
+      "Operates smoothly with standard commercial submersible pumps",
+      "Standard 1-inch female BSP connection"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "al075-ss-cascade-blade",
+    "code": "AL075",
+    "name": "SS Water Cascade / Blade Nozzle",
+    "slug": "ss-water-cascade-blade-nozzle-al075",
+    "category": "water-feature-lighting",
+    "categorySlug": "water-feature-lighting",
+    "categoryName": "Water Feature Lighting",
+    "subCategory": "SS Water Cascade Nozzles",
+    "shortDescription": "Heavy-duty stainless steel shear descent waterfall spillway available from 6 inches up to 10 feet.",
+    "description": "The AQUALUXIS LIGHT SS Water Cascade / Blade Nozzle (AL075) produces a continuous, crystal-clear sheet of falling water. Manufactured from marine-grade stainless steel with dual 1\"/1.5\" inlet threading and internal baffling for perfect laminar flow across widths up to 10 feet.",
+    "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg",
+      "/assets/products/al075-water-cascade-rear-entry-drawing.jpg",
+      "/assets/products/al075-water-cascade-bottom-entry-drawing.jpg"
+    ],
+    "specifications": {
+      "Model No.": "AL075",
+      "Nozzle Type": "Water Fall",
+      "Power": "As per pump (pressure / flow)",
+      "Housing": "SS (Stainless Steel)",
+      "Thread": "1\" / 1.5\"",
+      "Available Sizes": "6\", 8\", 10\", 1 FT \u2013 10 FT"
+    },
+    "variants": [
+      {
+        "code": "AL075 - 6\"",
+        "dimension": "Width 6\", Thread 1\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg"
+      },
+      {
+        "code": "AL075 - 8\"",
+        "dimension": "Width 8\", Thread 1\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg"
+      },
+      {
+        "code": "AL075 - 10\"",
+        "dimension": "Width 10\", Thread 1\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg"
+      },
+      {
+        "code": "AL075 - 1 FT",
+        "dimension": "Width 1 Ft (12\"), Thread 1\" / 1.5\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg"
+      },
+      {
+        "code": "AL075 - 2 FT",
+        "dimension": "Width 2 Ft (24\"), Thread 1\" / 1.5\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg"
+      },
+      {
+        "code": "AL075 - 3 FT",
+        "dimension": "Width 3 Ft (36\"), Thread 1\" / 1.5\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg"
+      },
+      {
+        "code": "AL075 - 4 FT",
+        "dimension": "Width 4 Ft (48\"), Thread 1.5\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg"
+      },
+      {
+        "code": "AL075 - 6 FT",
+        "dimension": "Width 6 Ft (72\"), Thread 1.5\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg"
+      },
+      {
+        "code": "AL075 - 8 FT",
+        "dimension": "Width 8 Ft (96\"), Thread 1.5\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg"
+      },
+      {
+        "code": "AL075 - 10 FT",
+        "dimension": "Width 10 Ft (120\"), Thread 1.5\"",
+        "wattage": "As per pump (pressure / flow)",
+        "image": "/assets/products/al075-ss-water-cascade-blade-nozzle.jpg"
+      }
+    ],
+    "applications": [
+      "Stainless Steel Blade Waterfalls",
+      "Infinity Pool Cascades",
+      "Resort Water Walls",
+      "Architectural Water Features"
+],
+    "features": [
+      "Internal hydrodynamic baffle chambers generating smooth glass-like laminar sheets",
+      "Solid marine grade stainless steel construction with zero warping",
+      "Extensive size selection from compact 6-inch to expansive 10-foot continuous blades",
+      "Dual 1-inch and 1.5-inch inlet options for flexible plumbing"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "al076-ss-step-blade",
+    "code": "AL076",
+    "name": "SS Step Water Blade Nozzle",
+    "slug": "ss-step-water-blade-nozzle-al076",
+    "category": "water-feature-lighting",
+    "categorySlug": "water-feature-lighting",
+    "categoryName": "Water Feature Lighting",
+    "subCategory": "SS Water Cascade Nozzles",
+    "shortDescription": "Stepped stainless steel waterfall blade engineered for pool steps, copings, and tiered retaining walls.",
+    "description": "The AQUALUXIS LIGHT SS Step Water Blade Nozzle (AL076) features a specialized stepped projection geometry that easily nests into coping steps, stone walls, and brickwork. Spanning sizes from 1 Ft to 8 Ft for uniform cascading water veils.",
+    "image": "/assets/products/al076-ss-step-water-blade-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al076-ss-step-water-blade-nozzle.jpg"
+],
+    "specifications": {
+      "Nozzle Type": "Water Fall / Step Blade",
+      "Housing": "SS (Stainless Steel)",
+      "Thread": "1\" / 1.5\"",
+      "Sizes Available": "1 Ft \u2013 8 Ft",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL076-1FT",
+        "dimension": "Width 1 Ft, Thread 1\" / 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL076-2FT",
+        "dimension": "Width 2 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL076-3FT",
+        "dimension": "Width 3 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL076-4FT",
+        "dimension": "Width 4 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL076-6FT",
+        "dimension": "Width 6 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL076-8FT",
+        "dimension": "Width 8 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      }
+    ],
+    "applications": [
+      "Stepped Waterfall Installations",
+      "Multi-Level Water Features",
+      "Landscape Cascades",
+      "Architectural Water Walls"
+],
+    "features": [
+      "Step profile engineered for masonry and tile step integration",
+      "Full stainless steel body with laser-welded seams",
+      "Consistent laminar sheet descent even at variable pump pressures",
+      "Standard 1\" and 1.5\" BSP threaded inlets"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "al077-ss-water-cascade",
+    "code": "AL077",
+    "name": "SS Water Cascade Nozzle",
+    "slug": "ss-water-cascade-nozzle-al077",
+    "category": "water-feature-lighting",
+    "categorySlug": "water-feature-lighting",
+    "categoryName": "Water Feature Lighting",
+    "subCategory": "SS Water Cascade Nozzles",
+    "shortDescription": "Architectural stainless steel waterfall cascade spillway in lengths from 1 foot to 8 feet.",
+    "description": "Crafted from marine-grade stainless steel, the AQUALUXIS LIGHT SS Water Cascade Nozzle (AL077) creates an uninterrupted, mirror-smooth water curtain. Engineered with interior flow-calming vanes to eliminate water turbulence before the weir edge.",
+    "image": "/assets/products/al077-ss-water-cascade-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al077-ss-water-cascade-nozzle.jpg"
+],
+    "specifications": {
+      "Nozzle Type": "Water Fall / Cascade",
+      "Housing": "SS (Stainless Steel)",
+      "Thread": "1\" / 1.5\"",
+      "Sizes Available": "1 Ft \u2013 8 Ft",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL077-1FT",
+        "dimension": "Width 1 Ft, Thread 1\" / 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL077-2FT",
+        "dimension": "Width 2 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL077-3FT",
+        "dimension": "Width 3 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL077-4FT",
+        "dimension": "Width 4 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL077-6FT",
+        "dimension": "Width 6 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL077-8FT",
+        "dimension": "Width 8 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      }
+    ],
+    "applications": [
+      "Stainless Steel Water Cascades",
+      "Poolside Waterfalls",
+      "Luxury Resort Installations",
+      "Decorative Water Walls"
+],
+    "features": [
+      "Precision-engineered weir lip delivering continuous unbroken water sheeting",
+      "Stainless steel construction impervious to outdoor weathering and treated pool water",
+      "Broad range of standard lengths from 1 Ft to 8 Ft",
+      "Clean concealed installation inside stone or rendered walls"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "al078-cobra-nozzle",
+    "code": "AL078",
+    "name": "Cobra Nozzle",
+    "slug": "cobra-nozzle-al078",
+    "category": "water-feature-lighting",
+    "categorySlug": "water-feature-lighting",
+    "categoryName": "Water Feature Lighting",
+    "subCategory": "Acrylic Waterfall Nozzles",
+    "shortDescription": "Sculptural stainless steel cobra waterfall fountain in 1 Ft, 2 Ft, and 3 Ft heights.",
+    "description": "The AQUALUXIS LIGHT Cobra Nozzle (AL078) is a freestanding sculptural waterfall crafted in gleaming stainless steel. Its iconic arching cobra silhouette projects a wide curtain of water back into the pool, providing both striking visual grandeur and relaxing hydrotherapeutic shoulder massage.",
+    "image": "/assets/products/al078-cobra-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al078-cobra-nozzle.jpg",
+      "/assets/products/al078-cobra-nozzle-2.jpg",
+      "/assets/products/al078-cobra-nozzle-3.jpg",
+      "/assets/products/al078-cobra-nozzle-profile.jpg"
+    ],
+    "specifications": {
+      "Nozzle Type": "Water Fall / Cobra Waterfall",
+      "Housing": "SS (Stainless Steel)",
+      "Thread": "1\" / 2\"",
+      "Sizes Available": "1 Ft, 2 Ft, 3 Ft",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL078-1FT",
+        "dimension": "Height 1 Ft, Thread 1\" / 2\"",
+        "wattage": "Flow as per pump pressure",
+        "image": "/assets/products/al078-cobra-nozzle.jpg"
+      },
+      {
+        "code": "AL078-2FT",
+        "dimension": "Height 2 Ft, Thread 2\"",
+        "wattage": "Flow as per pump pressure",
+        "image": "/assets/products/al078-cobra-nozzle-2.jpg"
+      },
+      {
+        "code": "AL078-3FT",
+        "dimension": "Height 3 Ft, Thread 2\"",
+        "wattage": "Flow as per pump pressure",
+        "image": "/assets/products/al078-cobra-nozzle-3.jpg"
+      }
+    ],
+    "applications": [
+      "Cobra-Style Poolside Waterfalls",
+      "Resort Swimming Pool Features",
+      "Decorative Landscape Waterfalls",
+      "Luxury Spa Water Features"
+],
+    "features": [
+      "Iconic sculptural cobra silhouette in polished marine stainless steel",
+      "Dual visual spectacle and invigorating neck/shoulder hydro-massage flow",
+      "Heavy-duty mounting base with secure flange anchors",
+      "Threaded 1\" / 2\" bottom inlet for high-flow hydraulic performance"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "al079-dolphin-nozzle",
+    "code": "AL079",
+    "name": "Dolphin Nozzle",
+    "slug": "dolphin-nozzle-al079",
+    "category": "water-feature-lighting",
+    "categorySlug": "water-feature-lighting",
+    "categoryName": "Water Feature Lighting",
+    "subCategory": "Acrylic Waterfall Nozzles",
+    "shortDescription": "Graceful arching dolphin-profile stainless steel poolside waterfall in 2-foot height.",
+    "description": "The AQUALUXIS LIGHT Dolphin Nozzle (AL079) combines hydrodynamic grace with solid stainless steel durability. Its fluid dolphin-inspired curvature projects an arching cascade into the pool, adding movement and relaxing acoustics to luxury pool surroundings.",
+    "image": "/assets/products/al079-dolphin-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al079-dolphin-nozzle.jpg"
+],
+    "specifications": {
+      "Nozzle Type": "Water Fall / Dolphin Cascade",
+      "Housing": "SS (Stainless Steel)",
+      "Thread": "1\" / 2\"",
+      "Sizes Available": "2 Ft",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL079-2FT",
+        "dimension": "Height 2 Ft, Thread 1\" / 2\"",
+        "wattage": "Flow as per pump pressure",
+        "image": "/assets/products/al079-dolphin-nozzle.jpg"
+      }
+    ],
+    "applications": [
+      "Dolphin-Style Water Displays",
+      "Decorative Swimming Pool Installations",
+      "Themed Water Features",
+      "Resort Water Attractions"
+],
+    "features": [
+      "Organic curved dolphin profile crafted in marine stainless steel",
+      "Soothing sound of falling water combined with shoulder massage stream",
+      "Mirror-polished corrosion resistant exterior finish",
+      "1\" / 2\" inlet plumbing for versatile flow rate adjustment"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "al080-acrylic-cobra",
+    "code": "AL080",
+    "name": "Acrylic Cobra Nozzle",
+    "slug": "acrylic-cobra-nozzle-al080",
+    "category": "water-feature-lighting",
+    "categorySlug": "water-feature-lighting",
+    "categoryName": "Water Feature Lighting",
+    "subCategory": "Acrylic Waterfall Nozzles",
+    "shortDescription": "Transparent optical acrylic cobra waterfall with integrated internal LED illumination in square and curved profiles.",
+    "description": "Crafted from crystal-clear optical acrylic, the AQUALUXIS LIGHT Acrylic Cobra Nozzle (AL080) revolutionizes poolside aesthetics. Internal LED lighting refracts directly through the clear body and falling water sheet, creating a glowing neon-like water cascade at night. Available in 2 Ft Square and Curve models.",
+    "image": "/assets/products/al080-acrylic-cobra-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al080-acrylic-cobra-nozzle.jpg"
+],
+    "specifications": {
+      "Nozzle Type": "Water Fall / Illuminated Acrylic Cobra",
+      "Housing": "Acrylic (Crystal Clear Optical Grade)",
+      "Thread": "2 Inch",
+      "Models Available": "2 Ft (Square), 2 Ft (Curve)",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL080-SQ",
+        "dimension": "2 Ft (Square), Thread 2\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL080-CV",
+        "dimension": "2 Ft (Curve), Thread 2\"",
+        "wattage": "Flow as per pump pressure"
+      }
+    ],
+    "applications": [
+      "Acrylic Waterfall Installations",
+      "Illuminated Poolside Cascades",
+      "Decorative Water Features",
+      "Resort Swimming Pools"
+],
+    "features": [
+      "100% transparent UV-resistant optical acrylic housing",
+      "Internal LED channel illuminates the entire structure and falling water stream",
+      "Available in both sharp architectural Square and flowing Curved profiles",
+      "2-inch high-flow inlet ensuring smooth, full-sheet water delivery"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "al081-acrylic-blade",
+    "code": "AL081",
+    "name": "Acrylic Blade Nozzle",
+    "slug": "acrylic-blade-nozzle-al081",
+    "category": "water-feature-lighting",
+    "categorySlug": "water-feature-lighting",
+    "categoryName": "Water Feature Lighting",
+    "subCategory": "Acrylic Waterfall Nozzles",
+    "shortDescription": "Crystal-clear optical acrylic waterfall blade spillway with internal LED channel in 1 Ft to 4 Ft widths.",
+    "description": "The AQUALUXIS LIGHT Acrylic Blade Nozzle (AL081) combines modern transparent acrylic construction with high-performance water sheeting. Designed with internal channels for integrated LED illumination, turning water walls into radiant glowing waterfalls.",
+    "image": "/assets/products/al081-acrylic-blade-nozzle.jpg",
+    "gallery": [
+      "/assets/products/al081-acrylic-blade-nozzle.jpg",
+      "/assets/products/al081-acrylic-blade-nozzle-detail.jpg"
+],
+    "specifications": {
+      "Nozzle Type": "Water Fall / Transparent Blade Spillway",
+      "Housing": "Acrylic (Crystal Clear Optical Grade)",
+      "Thread": "1.5 Inch",
+      "Sizes Available": "1 Ft, 2 Ft, 3 Ft, 4 Ft",
+      "Power / Flow": "As per pump (pressure) flow"
+    },
+    "variants": [
+      {
+        "code": "AL081-1FT",
+        "dimension": "Width 1 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL081-2FT",
+        "dimension": "Width 2 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL081-3FT",
+        "dimension": "Width 3 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      },
+      {
+        "code": "AL081-4FT",
+        "dimension": "Width 4 Ft, Thread 1.5\"",
+        "wattage": "Flow as per pump pressure"
+      }
+    ],
+    "applications": [
+      "Acrylic Blade Waterfalls",
+      "Architectural Water Walls",
+      "Poolside Cascades",
+      "Decorative Water Installations"
+],
+    "features": [
+      "Precision-engineered optical acrylic weir for glass-like transparent waterfall descent",
+      "Integrated internal slot for waterproof LED strip illumination",
+      "UV-stabilized non-yellowing acrylic suitable for direct sunlight exposure",
+      "1.5-inch threaded bottom inlet connection"
+    ],
+    "isFeatured": true
   }
 ];
 
@@ -1300,12 +1912,12 @@ export const CATEGORIES: CategoryInfo[] = [
     "tagline": "Engineered Underwater Luminaires for Pools & Aquatic Spas",
     "description": "Precision-engineered IP68 underwater luminaires crafted from marine-grade 304/316 stainless steel and engineered ABS. Featuring advanced Edison and Cree LED chips with optimal photometric distribution and ultra-low thermal resistance.",
     "heroImage": "/assets/hero/hero-pool-night-luxury.webp",
-    "productCount": 8,
+    "productCount": 4,
     "subCategories": [
-      "Underwater Pool Lights",
-      "LED Pool Lights",
-      "Swimming Pool Lights",
-      "Pool Light Fittings"
+      "Surface Mount Lights",
+      "ABS Pool Lights",
+      "Stainless Steel Pool Lights",
+      "Concealed / In-Ground Lights"
     ],
     "highlights": [
       "Certified IP68 true underwater hermetic sealing",
@@ -1321,12 +1933,10 @@ export const CATEGORIES: CategoryInfo[] = [
     "tagline": "High-Lumen Submersible Illumination for Dynamic Water Displays",
     "description": "High-intensity underwater fixtures designed to illuminate vertical water jets, architectural geysers, and dancing water displays. Available in center-hole nozzle configurations and adjustable heavy-duty swivel brackets.",
     "heroImage": "/assets/hero/hero-fountain-grand.webp",
-    "productCount": 8,
+    "productCount": 16,
     "subCategories": [
-      "Fountain Lights",
-      "Underwater Fountain Lights",
-      "LED Fountain Lights",
-      "Fountain Light Fittings",
+      "Spot Fountain Lights",
+      "Nozzle Mount Lights",
       "Fountain Nozzles"
     ],
     "highlights": [
@@ -1343,12 +1953,11 @@ export const CATEGORIES: CategoryInfo[] = [
     "tagline": "Architectural Grazing, Shear Water Cascades & Illuminated Spillways",
     "description": "Sophisticated linear wall grazing, stainless steel shear descent cascades, illuminated acrylic cobra nozzles, and architectural spillways that bring movement and acoustic elegance to luxury environments.",
     "heroImage": "/assets/applications/app-architectural-facade.webp",
-    "productCount": 5,
+    "productCount": 8,
     "subCategories": [
-      "Water Feature Lights",
-      "Architectural Water Lighting",
-      "Decorative Water Lighting",
-      "Water Curtains & Cascades"
+      "Wall Washer Lights",
+      "Water Cascades & Blades",
+      "Decorative Waterfalls"
     ],
     "highlights": [
       "Uniform water sheet laminar flow with integrated LED illumination",
