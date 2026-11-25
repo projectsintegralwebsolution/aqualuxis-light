@@ -199,7 +199,7 @@ export default function OurWorkPortfolio() {
                     onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setActiveVideo(video); }}
                   >
                     <Image
-                      src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+                      src={video.thumbnail || `https://img.youtube.com/vi/${video.youtubeId || video.id}/hqdefault.jpg`}
                       alt={video.title}
                       fill
                       loading="lazy"
@@ -248,16 +248,27 @@ export default function OurWorkPortfolio() {
                         <span>Watch Video</span>
                       </button>
 
-                      <a
-                        href={`https://www.youtube.com/watch?v=${video.id}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-400 hover:text-slate-600 transition-colors inline-flex items-center"
-                        title="Watch on YouTube"
-                        aria-label={`Watch ${video.title} on YouTube`}
-                      >
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
+                      {video.isLocal ? (
+                        <button
+                          onClick={() => setActiveVideo(video)}
+                          className="text-[#087FEA] hover:text-[#00BCEB] transition-colors inline-flex items-center font-medium text-[11px]"
+                          title="Watch Video"
+                          aria-label={`Play ${video.title}`}
+                        >
+                          <span>Aqualuxis Video</span>
+                        </button>
+                      ) : (
+                        <a
+                          href={`https://www.youtube.com/watch?v=${video.youtubeId || video.id}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-slate-400 hover:text-slate-600 transition-colors inline-flex items-center"
+                          title="Watch on YouTube"
+                          aria-label={`Watch ${video.title} on YouTube`}
+                        >
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -371,15 +382,26 @@ export default function OurWorkPortfolio() {
               <X className="w-5 h-5" />
             </button>
 
-            {/* 16:9 Responsive Embed */}
-            <div className="relative aspect-video w-full bg-black">
-              <iframe
-                src={`https://www.youtube.com/embed/${activeVideo.id}?autoplay=1&rel=0`}
-                title={activeVideo.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full border-0"
-              />
+            {/* 16:9 Responsive Embed or Local Video Player */}
+            <div className="relative aspect-video w-full bg-black flex items-center justify-center overflow-hidden">
+              {activeVideo.isLocal || activeVideo.videoSrc ? (
+                <video
+                  key={activeVideo.id}
+                  src={activeVideo.videoSrc}
+                  controls
+                  autoPlay
+                  playsInline
+                  className="w-full h-full object-contain bg-black"
+                />
+              ) : (
+                <iframe
+                  src={`https://www.youtube.com/embed/${activeVideo.youtubeId || activeVideo.id}?autoplay=1&rel=0`}
+                  title={activeVideo.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full border-0"
+                />
+              )}
             </div>
 
             {/* Video Details in Modal */}
@@ -389,15 +411,27 @@ export default function OurWorkPortfolio() {
                   {activeVideo.category}
                 </span>
 
-                <a
-                  href={`https://www.youtube.com/watch?v=${activeVideo.id}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-1.5 text-xs text-slate-300 hover:text-white transition-colors"
-                >
-                  <span>Watch on YouTube</span>
-                  <ExternalLink className="w-3.5 h-3.5 text-[#00BCEB]" />
-                </a>
+                {activeVideo.isLocal ? (
+                  <a
+                    href="https://www.youtube.com/@aqualuxislight"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-1.5 text-xs text-slate-300 hover:text-white transition-colors"
+                  >
+                    <span>@aqualuxislight YouTube</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-[#00BCEB]" />
+                  </a>
+                ) : (
+                  <a
+                    href={`https://www.youtube.com/watch?v=${activeVideo.youtubeId || activeVideo.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-1.5 text-xs text-slate-300 hover:text-white transition-colors"
+                  >
+                    <span>Watch on YouTube</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-[#00BCEB]" />
+                  </a>
+                )}
               </div>
 
               <h3 id="video-modal-title" className="text-lg sm:text-xl font-bold text-white leading-snug">
