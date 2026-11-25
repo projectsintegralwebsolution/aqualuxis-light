@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
+  ChevronLeft,
   ChevronRight,
   ChevronDown,
   ChevronUp,
@@ -205,23 +206,38 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
     setActiveThumbIndex(idx);
   };
 
-  const handlePrevThumb = () => {
-    const newIdx = activeThumbIndex === 0 ? galleryImages.length - 1 : activeThumbIndex - 1;
+  const handlePrevImage = () => {
+    if (galleryImages.length <= 1) return;
+    const currentIdx = galleryImages.findIndex((img) => img.src === mainImage);
+    const effectiveIdx = currentIdx !== -1 ? currentIdx : activeThumbIndex;
+    const newIdx = effectiveIdx === 0 ? galleryImages.length - 1 : effectiveIdx - 1;
     setActiveThumbIndex(newIdx);
     setMainImage(galleryImages[newIdx].src);
     if (thumbContainerRef.current) {
-      thumbContainerRef.current.scrollBy({ top: -75, behavior: 'smooth' });
+      const thumbButtons = thumbContainerRef.current.querySelectorAll('button');
+      if (thumbButtons[newIdx]) {
+        thumbButtons[newIdx].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+      }
     }
   };
 
-  const handleNextThumb = () => {
-    const newIdx = activeThumbIndex === galleryImages.length - 1 ? 0 : activeThumbIndex + 1;
+  const handleNextImage = () => {
+    if (galleryImages.length <= 1) return;
+    const currentIdx = galleryImages.findIndex((img) => img.src === mainImage);
+    const effectiveIdx = currentIdx !== -1 ? currentIdx : activeThumbIndex;
+    const newIdx = effectiveIdx === galleryImages.length - 1 ? 0 : effectiveIdx + 1;
     setActiveThumbIndex(newIdx);
     setMainImage(galleryImages[newIdx].src);
     if (thumbContainerRef.current) {
-      thumbContainerRef.current.scrollBy({ top: 75, behavior: 'smooth' });
+      const thumbButtons = thumbContainerRef.current.querySelectorAll('button');
+      if (thumbButtons[newIdx]) {
+        thumbButtons[newIdx].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+      }
     }
   };
+
+  const handlePrevThumb = handlePrevImage;
+  const handleNextThumb = handleNextImage;
 
   const handleInlineSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -467,6 +483,28 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                   {selectedVariant.code || product.code}
                 </span>
               </div>
+
+              {/* Previous & Next Navigation Buttons */}
+              {galleryImages.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    onClick={handlePrevImage}
+                    aria-label="Previous product image"
+                    className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/95 hover:bg-white border border-[#CBDCEB] text-[#556987] hover:text-[#087FE5] flex items-center justify-center shadow-sm hover:shadow-md transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#087FE5]/30 active:scale-95"
+                  >
+                    <ChevronLeft className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleNextImage}
+                    aria-label="Next product image"
+                    className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/95 hover:bg-white border border-[#CBDCEB] text-[#556987] hover:text-[#087FE5] flex items-center justify-center shadow-sm hover:shadow-md transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#087FE5]/30 active:scale-95"
+                  >
+                    <ChevronRight className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+                  </button>
+                </>
+              )}
 
               {/* Main Cutout Image */}
               <div className="relative w-full h-full flex items-center justify-center">

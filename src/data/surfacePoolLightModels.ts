@@ -189,9 +189,10 @@ export const SURFACE_POOL_MODELS: SurfacePoolModel[] = [
     wire: 'Poly Cab (1 Mtr Wire)',
     beamAngle: '10°, 20°, 30°, 40°, 45°, 60°, 90°',
     protection: 'IP68 Submersible',
-    image: '/assets/products/al00-surface-pool-light.jpg',
+    image: '/assets/products/al00-surface-pool-light-front-view.jpg',
     gallery: [
-      '/assets/products/al00-surface-pool-light.jpg',
+      '/assets/products/al00-surface-pool-light-front-view.jpg',
+      '/assets/products/al00-surface-pool-light-side-angle.jpg',
       '/assets/products/al00-surface-pool-light-profile.jpg',
       '/assets/products/al00-surface-pool-light-rear.jpg',
       '/assets/products/al01-surface-pool-light.jpg',

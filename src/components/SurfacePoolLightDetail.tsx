@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
+  ChevronLeft,
   ChevronRight,
   ChevronDown,
   ChevronUp,
@@ -139,15 +140,11 @@ export default function SurfacePoolLightDetail() {
   const [formSuccess, setFormSuccess] = useState(false);
   const [formError, setFormError] = useState('');
 
-  // 8 Verified Product Images for the vertical thumbnail gallery (AL00–AL015 Family)
+  // Verified Product Images for the vertical thumbnail gallery (AL00–AL015 Family)
   const galleryImages = [
     {
       src: '/assets/products/al03-surface-pool-light.jpg',
       label: 'AL03 (5")',
-    },
-    {
-      src: '/assets/products/al00-surface-pool-light.jpg',
-      label: 'AL00 (50mm)',
     },
     {
       src: '/assets/products/al01-surface-pool-light.jpg',
@@ -173,6 +170,14 @@ export default function SurfacePoolLightDetail() {
       src: '/assets/products/al00-surface-pool-light-rear.jpg',
       label: 'Mounting Base',
     },
+    {
+      src: '/assets/products/al00-surface-pool-light-side-angle.jpg',
+      label: 'Side Angle with Cable',
+    },
+    {
+      src: '/assets/products/al00-surface-pool-light-front-view.jpg',
+      label: 'Front View with Cable',
+    },
   ];
 
   // When selectedModel changes, update main image and wattage
@@ -188,23 +193,38 @@ export default function SurfacePoolLightDetail() {
     setActiveThumbIndex(idx);
   };
 
-  const handlePrevThumb = () => {
-    const newIdx = activeThumbIndex === 0 ? galleryImages.length - 1 : activeThumbIndex - 1;
+  const handlePrevImage = () => {
+    if (galleryImages.length <= 1) return;
+    const currentIdx = galleryImages.findIndex((img) => img.src === mainImage);
+    const effectiveIdx = currentIdx !== -1 ? currentIdx : activeThumbIndex;
+    const newIdx = effectiveIdx === 0 ? galleryImages.length - 1 : effectiveIdx - 1;
     setActiveThumbIndex(newIdx);
     setMainImage(galleryImages[newIdx].src);
     if (thumbContainerRef.current) {
-      thumbContainerRef.current.scrollBy({ top: -75, behavior: 'smooth' });
+      const thumbButtons = thumbContainerRef.current.querySelectorAll('button');
+      if (thumbButtons[newIdx]) {
+        thumbButtons[newIdx].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+      }
     }
   };
 
-  const handleNextThumb = () => {
-    const newIdx = activeThumbIndex === galleryImages.length - 1 ? 0 : activeThumbIndex + 1;
+  const handleNextImage = () => {
+    if (galleryImages.length <= 1) return;
+    const currentIdx = galleryImages.findIndex((img) => img.src === mainImage);
+    const effectiveIdx = currentIdx !== -1 ? currentIdx : activeThumbIndex;
+    const newIdx = effectiveIdx === galleryImages.length - 1 ? 0 : effectiveIdx + 1;
     setActiveThumbIndex(newIdx);
     setMainImage(galleryImages[newIdx].src);
     if (thumbContainerRef.current) {
-      thumbContainerRef.current.scrollBy({ top: 75, behavior: 'smooth' });
+      const thumbButtons = thumbContainerRef.current.querySelectorAll('button');
+      if (thumbButtons[newIdx]) {
+        thumbButtons[newIdx].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+      }
     }
   };
+
+  const handlePrevThumb = handlePrevImage;
+  const handleNextThumb = handleNextImage;
 
   const handleInlineSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -330,6 +350,28 @@ export default function SurfacePoolLightDetail() {
               >
                 <Maximize2 className="w-4 h-4" />
               </button>
+
+              {/* Previous & Next Navigation Buttons */}
+              {galleryImages.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    onClick={handlePrevImage}
+                    aria-label="Previous product image"
+                    className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/95 hover:bg-white border border-[#CBDCEB] text-[#556987] hover:text-[#087FE5] flex items-center justify-center shadow-sm hover:shadow-md transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#087FE5]/30 active:scale-95"
+                  >
+                    <ChevronLeft className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleNextImage}
+                    aria-label="Next product image"
+                    className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/95 hover:bg-white border border-[#CBDCEB] text-[#556987] hover:text-[#087FE5] flex items-center justify-center shadow-sm hover:shadow-md transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#087FE5]/30 active:scale-95"
+                  >
+                    <ChevronRight className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+                  </button>
+                </>
+              )}
 
               {/* Main Cutout Image */}
               <div className="relative w-full h-full flex items-center justify-center">

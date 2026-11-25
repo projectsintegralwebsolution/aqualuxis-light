@@ -64,18 +64,19 @@ export const PRODUCTS: Product[] = [
     "subCategory": "SS Surface Swimming Pool Lights",
     "shortDescription": "Full stainless steel surface-mount swimming pool light engineered for underwater durability and high photometric efficiency.",
     "description": "Manufactured with premium SS 304/316 marine-grade stainless steel or aluminium plate, the AQUALUXIS LIGHT Surface Model Swimming Pool Light delivers reliable, long-lasting illumination for concrete and tiled swimming pools. Features IP68 water ingress protection, high-efficiency Power LED Edison chips, and customizable beam spread angles.",
-    "image": "/assets/products/al00-surface-pool-light.jpg",
+    "image": "/assets/products/al03-surface-pool-light.jpg",
     "gallery": [
-      "/assets/products/al00-surface-pool-light.jpg",
+      "/assets/products/al03-surface-pool-light.jpg",
       "/assets/products/al01-surface-pool-light.jpg",
       "/assets/products/al02-surface-pool-light.jpg",
-      "/assets/products/al03-surface-pool-light.jpg",
       "/assets/products/al04-surface-pool-light.jpg",
       "/assets/products/al05-surface-pool-light.jpg",
       "/assets/products/al06-surface-pool-light.jpg",
       "/assets/products/al07-surface-pool-light.jpg",
       "/assets/products/al00-surface-pool-light-profile.jpg",
-      "/assets/products/al00-surface-pool-light-rear.jpg"
+      "/assets/products/al00-surface-pool-light-rear.jpg",
+      "/assets/products/al00-surface-pool-light-side-angle.jpg",
+      "/assets/products/al00-surface-pool-light-front-view.jpg"
 ],
     "specifications": {
       "Body Material": "SS 304 / 316 / Aluminium Plate Model",
@@ -93,7 +94,7 @@ export const PRODUCTS: Product[] = [
         "code": "AL00",
         "dimension": "Dia 50 mm, Thickness 1\"",
         "wattage": "1*3 = 3 Watt",
-        "image": "/assets/products/al00-surface-pool-light.jpg"
+        "image": "/assets/products/al00-surface-pool-light-front-view.jpg"
       },
       {
         "code": "AL01",
@@ -216,13 +217,27 @@ export const PRODUCTS: Product[] = [
     "gallery": [
       "/assets/products/al017-abs-pool-light.jpg",
       "/assets/products/al018-abs-pool-light.jpg",
+      "/assets/products/al016-abs-pool-light-photo-6.jpg",
+      "/assets/products/al016-abs-pool-light-photo-4.jpg",
+      "/assets/products/al016-abs-pool-light-photo-1.jpg",
+      "/assets/products/al016-abs-pool-light-photo-8.jpg",
+      "/assets/products/al016-abs-pool-light-photo-10.jpg",
+      "/assets/products/al016-abs-pool-light-photo-12.jpg",
+      "/assets/products/al016-abs-pool-light-photo-14.jpg",
+      "/assets/products/al016-abs-pool-light-photo-5.jpg",
+      "/assets/products/al016-abs-pool-light-photo-3.jpg",
+      "/assets/products/al016-abs-pool-light-photo-7.jpg",
+      "/assets/products/al016-abs-pool-light-photo-9.jpg",
+      "/assets/products/al016-abs-pool-light-photo-11.jpg",
+      "/assets/products/al016-abs-pool-light-photo-13.jpg",
       "/assets/products/al021-abs-pool-light.jpg",
+      "/assets/products/al024-abs-pool-light.jpg",
+      "/assets/products/al025-abs-pool-light.jpg",
       "/assets/products/al021-abs-pool-light-rear.jpg",
       "/assets/products/al023-abs-pool-light-profile.jpg",
-      "/assets/products/al024-abs-pool-light.jpg",
       "/assets/products/al024-abs-pool-light-profile.jpg",
-      "/assets/products/al025-abs-pool-light.jpg",
-      "/assets/products/al029-abs-colorways.jpg"
+      "/assets/products/al029-abs-colorways.jpg",
+      "/assets/products/al016-abs-pool-light-photo-2.jpg"
     ],
     "specifications": {
       "Body Material": "ABS + PC (Engineered Polymers)",
@@ -432,8 +447,8 @@ export const PRODUCTS: Product[] = [
       "/assets/products/al032-concealed-pool-light.jpg",
       "/assets/products/al032-concealed-pool-light-housing.jpg",
       "/assets/products/al034-concealed-pool-light.jpg",
-      "/assets/products/al035-concealed-pool-light.jpg",
-      "/assets/products/al036-concealed-pool-light.jpg",
+      "/assets/products/al032-concealed-pool-light-front-angle.jpg",
+      "/assets/products/al032-concealed-pool-light-rear-view.jpg",
       "/assets/products/al032-concealed-pool-light-profile.jpg",
       "/assets/products/al033-concealed-pool-light-profile.jpg",
       "/assets/products/al036-concealed-pool-light-rear.jpg"
@@ -471,13 +486,13 @@ export const PRODUCTS: Product[] = [
         "code": "AL035",
         "dimension": "Outer 140 mm, Cutout 110 mm, Height 50 mm (9 LED)",
         "wattage": "9 Watt / 27 Watt",
-        "image": "/assets/products/al035-concealed-pool-light.jpg"
+        "image": "/assets/products/al032-concealed-pool-light-front-angle.jpg"
       },
       {
         "code": "AL036",
         "dimension": "Outer 140 mm, Cutout 110 mm, Height 50 mm (12 LED)",
         "wattage": "12 Watt / 36 Watt",
-        "image": "/assets/products/al036-concealed-pool-light.jpg"
+        "image": "/assets/products/al032-concealed-pool-light-front-angle.jpg"
       }
     ],
     "applications": [
@@ -778,11 +793,14 @@ export const PRODUCTS: Product[] = [
     "image": "/assets/products/al058-adjustable-nozzle-fountain-light.jpg",
     "gallery": [
       "/assets/products/al058-adjustable-nozzle-fountain-light.jpg",
-      "/assets/products/al059-adjustable-nozzle-fountain-light.jpg",
-      "/assets/products/al060-adjustable-nozzle-fountain-light.jpg",
       "/assets/products/al061-adjustable-nozzle-fountain-light.jpg",
-      "/assets/products/al058-adjustable-nozzle-fountain-light-side.jpg"
-],
+      "/assets/products/al058-adjustable-nozzle-fountain-light-photo-1.jpg",
+      "/assets/products/al058-adjustable-nozzle-fountain-light-photo-2.jpg",
+      "/assets/products/al058-adjustable-nozzle-fountain-light-photo-3.jpg",
+      "/assets/products/al058-adjustable-nozzle-fountain-light-photo-4.jpg",
+      "/assets/products/al058-adjustable-nozzle-fountain-light-photo-5.jpg",
+      "/assets/products/al058-adjustable-nozzle-fountain-light-photo-6.jpg"
+    ],
     "specifications": {
       "Body Material": "SS 304 / 316",
       "Lens": "PC Glass",
@@ -805,19 +823,19 @@ export const PRODUCTS: Product[] = [
         "code": "AL059",
         "dimension": "Outer 5\", Centre Hole 1.5\", Thickness 2\"",
         "wattage": "6 Watt / 18 Watt",
-        "image": "/assets/products/al059-adjustable-nozzle-fountain-light.jpg"
+        "image": "/assets/products/al058-adjustable-nozzle-fountain-light-photo-3.jpg"
       },
       {
         "code": "AL060",
         "dimension": "Outer 5\", Centre Hole 1.5\", Thickness 2\"",
         "wattage": "9 Watt / 27 Watt",
-        "image": "/assets/products/al060-adjustable-nozzle-fountain-light.jpg"
+        "image": "/assets/products/al058-adjustable-nozzle-fountain-light-photo-6.jpg"
       },
       {
         "code": "AL061",
         "dimension": "Outer 5\", Centre Hole 1.5\", Thickness 2\"",
         "wattage": "12 Watt / 36 Watt",
-        "image": "/assets/products/al061-adjustable-nozzle-fountain-light.jpg"
+        "image": "/assets/products/al058-adjustable-nozzle-fountain-light-photo-5.jpg"
       }
     ],
     "applications": [
@@ -1000,9 +1018,7 @@ export const PRODUCTS: Product[] = [
     "description": "The AQUALUXIS LIGHT Finger Jet Nozzle (AL065) discharges precision parabolic crystal streams radiating gracefully in a fan or arch shape. Available in 7, 10, 14, and 20 finger spray configurations crafted in chrome-plated brass.",
     "image": "/assets/products/al065-finger-jet-nozzle.jpg",
     "gallery": [
-      "/assets/products/al065-finger-jet-nozzle.jpg",
-      "/assets/products/al065-finger-jet-nozzle-cluster-1.jpg",
-      "/assets/products/al065-finger-jet-nozzle-cluster-2.jpg"
+      "/assets/products/al065-finger-jet-nozzle.jpg"
     ],
     "specifications": {
       "Nozzle Type": "Finger Nozzle",
@@ -1023,19 +1039,19 @@ export const PRODUCTS: Product[] = [
         "code": "AL065-10F",
         "dimension": "10 Finger Jets, Height 90 mm, Thread 1\"",
         "wattage": "Flow as per pump pressure",
-        "image": "/assets/products/al065-finger-jet-nozzle-cluster-1.jpg"
+        "image": "/assets/products/al065-finger-jet-nozzle.jpg"
       },
       {
         "code": "AL065-14F",
         "dimension": "14 Finger Jets, Height 90 mm, Thread 1\"",
         "wattage": "Flow as per pump pressure",
-        "image": "/assets/products/al065-finger-jet-nozzle-cluster-1.jpg"
+        "image": "/assets/products/al065-finger-jet-nozzle.jpg"
       },
       {
         "code": "AL065-20F",
         "dimension": "20 Finger Jets, Height 90 mm, Thread 1\"",
         "wattage": "Flow as per pump pressure",
-        "image": "/assets/products/al065-finger-jet-nozzle-cluster-2.jpg"
+        "image": "/assets/products/al065-finger-jet-nozzle.jpg"
       }
     ],
     "applications": [

@@ -90,13 +90,13 @@ interface MegaCategory {
 const MEGA_CATEGORIES: MegaCategory[] = [
   {
     id: 'underwater-pool-lights',
-    tabLabel: 'Underwater Pool Lights',
-    tabLabelLines: ['Underwater', 'Pool Lights'],
+    tabLabel: 'SS Surface Swimming Pool Light',
+    tabLabelLines: ['SS Surface Swimming', 'Pool Light'],
     icon: Droplet,
     categoryLink: '/pool-lighting',
     bannerCard: {
       image: '/assets/categories/underwater-lights-new.jpg',
-      eyebrow: 'UNDERWATER POOL LIGHTS',
+      eyebrow: 'SS SURFACE SWIMMING POOL LIGHT',
       title: 'Marine-Grade Submersible Fixtures',
       description: 'Heavy-duty stainless steel submersible lights engineered for deep water immersion and saline environments.',
       features: [
@@ -107,7 +107,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
     },
     categoryDetails: {
       eyebrow: 'EXPLORE OUR RANGE',
-      heading: 'Underwater Pool Lights',
+      heading: 'SS Surface Swimming Pool Light',
       description: 'Submersible luminaires for swimming pools, spas, water features, and deep aquatic basins.',
       categoryLink: '/pool-lighting',
       products: [
@@ -129,7 +129,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
           title: 'Surface Model Swimming Pool Light',
           code: '(AL00 - AL015)',
           description: 'Full stainless steel surface-mount swimming pool light delivering high photometric efficiency.',
-          image: '/assets/products/al00-surface-pool-light.jpg',
+          image: '/assets/products/al03-surface-pool-light.jpg',
           href: '/products/surface-model-swimming-pool-light-al00-al015',
         },
         {
@@ -141,7 +141,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
         },
       ],
     },
-    exploreButtonText: 'Explore All Underwater Pool Lights',
+    exploreButtonText: 'Explore All SS Surface Swimming Pool Lights',
     solutions: [
       { icon: LayoutGrid, title: 'Applications', description: 'Deep Submersion, Pools & Spas', href: '/applications#submersible' },
       { icon: FileText, title: 'Technical Resources', description: 'Brochures, Installation Guides', href: '/catalogue' },
@@ -151,13 +151,13 @@ const MEGA_CATEGORIES: MegaCategory[] = [
   },
   {
     id: 'led-pool-lights',
-    tabLabel: 'LED Pool Lights',
-    tabLabelLines: ['LED Pool', 'Lights'],
+    tabLabel: 'ABS Body Swimming Pool Light',
+    tabLabelLines: ['ABS Body Swimming', 'Pool Light'],
     icon: Sparkles,
     categoryLink: '/pool-lighting',
     bannerCard: {
       image: '/assets/products/underwater-pool-luminaire-installed.jpg',
-      eyebrow: 'LED POOL LIGHTS',
+      eyebrow: 'ABS BODY SWIMMING POOL LIGHT',
       title: 'High-Efficiency LED Pool Illumination',
       description: 'Advanced high-lumen Power LEDs delivering brilliant, uniform illumination and vivid RGB color transitions.',
       features: [
@@ -168,7 +168,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
     },
     categoryDetails: {
       eyebrow: 'EXPLORE OUR RANGE',
-      heading: 'LED Pool Lights',
+      heading: 'ABS Body Swimming Pool Light',
       description: 'High-performance LED pool luminaires engineered for luminous efficiency, safety, and modern ambience.',
       categoryLink: '/pool-lighting',
       products: [
@@ -176,7 +176,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
           title: 'Surface Model Swimming Pool Light',
           code: '(AL00 - AL015)',
           description: 'Full stainless steel surface-mount LED pool light delivering high photometric efficiency and IP68 protection.',
-          image: '/assets/products/al00-surface-pool-light.jpg',
+          image: '/assets/products/al03-surface-pool-light.jpg',
           href: '/products/surface-model-swimming-pool-light-al00-al015',
         },
         {
@@ -202,7 +202,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
         },
       ],
     },
-    exploreButtonText: 'Explore All LED Pool Lights',
+    exploreButtonText: 'Explore All ABS Body Swimming Pool Lights',
     solutions: [
       { icon: LayoutGrid, title: 'Applications', description: 'Pools, Fountains, Landscapes & More', href: '/applications' },
       { icon: FileText, title: 'Technical Resources', description: 'Brochures, Installation Guides', href: '/catalogue' },
@@ -212,13 +212,13 @@ const MEGA_CATEGORIES: MegaCategory[] = [
   },
   {
     id: 'swimming-pool-lights',
-    tabLabel: 'Swimming Pool Lights',
-    tabLabelLines: ['Swimming', 'Pool Lights'],
+    tabLabel: 'SS Body Swimming Pool Light',
+    tabLabelLines: ['SS Body Swimming', 'Pool Light'],
     icon: Waves,
     categoryLink: '/pool-lighting',
     bannerCard: {
       image: '/assets/products/underwater-pool-luminaire-installed.jpg',
-      eyebrow: 'SWIMMING POOL LIGHTS',
+      eyebrow: 'SS BODY SWIMMING POOL LIGHT',
       title: 'Premium Pool Lighting Solutions',
       description: 'Energy-efficient, durable and high-performance LED lights designed for residential, commercial and luxury swimming pools.',
       features: [
@@ -229,7 +229,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
     },
     categoryDetails: {
       eyebrow: 'EXPLORE OUR RANGE',
-      heading: 'Swimming Pool Lights',
+      heading: 'SS Body Swimming Pool Light',
       description: 'Wide range of LED pool lights designed for safety, ambience and long-lasting performance.',
       categoryLink: '/pool-lighting',
       products: [
@@ -244,7 +244,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
           title: 'Surface Model Pool Light',
           code: '(AL00 - AL015)',
           description: 'High-grade marine stainless steel surface luminaire with impact-resistant optical lens.',
-          image: '/assets/products/al00-surface-pool-light.jpg',
+          image: '/assets/products/al03-surface-pool-light.jpg',
           href: '/products/surface-model-swimming-pool-light-al00-al015',
         },
         {
@@ -263,7 +263,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
         },
       ],
     },
-    exploreButtonText: 'Explore All Swimming Pool Lights',
+    exploreButtonText: 'Explore All SS Body Swimming Pool Lights',
     solutions: [
       { icon: LayoutGrid, title: 'Applications', description: 'Pools, Fountains, Landscapes & More', href: '/applications' },
       { icon: FileText, title: 'Technical Resources', description: 'Brochures, Installation Guides', href: '/catalogue' },
@@ -273,13 +273,13 @@ const MEGA_CATEGORIES: MegaCategory[] = [
   },
   {
     id: 'pool-light-fittings',
-    tabLabel: 'Pool Light Fittings',
-    tabLabelLines: ['Pool Light', 'Fittings'],
+    tabLabel: 'Conceal Light Swimming Pool Light',
+    tabLabelLines: ['Conceal Light', 'Swimming Pool Light'],
     icon: Wrench,
     categoryLink: '/pool-lighting',
     bannerCard: {
       image: '/assets/categories/underwater-lights-new.jpg',
-      eyebrow: 'POOL LIGHT FITTINGS',
+      eyebrow: 'CONCEAL LIGHT SWIMMING POOL LIGHT',
       title: 'Niche & Surface Mounting Systems',
       description: 'Precision engineered wall niches, trim rings, threaded adapters, and waterproof mounting brackets for concrete, liner, and fiberglass pools.',
       features: [
@@ -290,7 +290,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
     },
     categoryDetails: {
       eyebrow: 'EXPLORE OUR RANGE',
-      heading: 'Pool Light Fittings',
+      heading: 'Conceal Light Swimming Pool Light',
       description: 'Mounting brackets, niche adaptors, trim rings, and cable conduit glands for seamless pool light installations.',
       categoryLink: '/pool-lighting',
       products: [
@@ -298,7 +298,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
           title: 'Surface Model Pool Light',
           code: '(AL00 - AL015)',
           description: 'Full stainless steel surface-mounting assembly for direct wall attachment.',
-          image: '/assets/products/al00-surface-pool-light.jpg',
+          image: '/assets/products/al03-surface-pool-light.jpg',
           href: '/products/surface-model-swimming-pool-light-al00-al015',
         },
         {
@@ -324,7 +324,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
         },
       ],
     },
-    exploreButtonText: 'Explore All Pool Light Fittings',
+    exploreButtonText: 'Explore All Conceal Light Swimming Pool Lights',
     solutions: [
       { icon: LayoutGrid, title: 'Applications', description: 'Concrete, Liner & Fiberglass Pools', href: '/applications' },
       { icon: FileText, title: 'Technical Resources', description: 'Installation & Retrofit Manuals', href: '/catalogue' },
@@ -334,13 +334,13 @@ const MEGA_CATEGORIES: MegaCategory[] = [
   },
   {
     id: 'underwater-fountain-lights',
-    tabLabel: 'Underwater Fountain Lights',
-    tabLabelLines: ['Underwater', 'Fountain Lights'],
+    tabLabel: 'Full SS Spot Fountain Light',
+    tabLabelLines: ['Full SS Spot', 'Fountain Light'],
     icon: Droplet,
     categoryLink: '/fountain-lighting',
     bannerCard: {
       image: '/assets/categories/led-fountain-lights-new.jpg',
-      eyebrow: 'UNDERWATER FOUNTAIN LIGHTS',
+      eyebrow: 'FULL SS SPOT FOUNTAIN LIGHT',
       title: 'High-Output Submersible Fountain Fixtures',
       description: 'Precision 304 & 316 stainless steel underwater spotlights built to withstand continuous water movement and high-pressure fountain spray.',
       features: [
@@ -351,7 +351,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
     },
     categoryDetails: {
       eyebrow: 'EXPLORE OUR RANGE',
-      heading: 'Underwater Fountain Lights',
+      heading: 'Full SS Spot Fountain Light',
       description: 'Heavy-duty stainless steel spotlights and stand-mounted projectors designed for water basins and pond features.',
       categoryLink: '/fountain-lighting',
       products: [
@@ -385,7 +385,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
         },
       ],
     },
-    exploreButtonText: 'Explore All Underwater Fountain Lights',
+    exploreButtonText: 'Explore All Full SS Spot Fountain Lights',
     solutions: [
       { icon: LayoutGrid, title: 'Applications', description: 'Plaza & Decorative Water Basins', href: '/applications#fountains' },
       { icon: FileText, title: 'Technical Resources', description: 'Beam Angle & Wattage Specs', href: '/catalogue' },
@@ -395,13 +395,13 @@ const MEGA_CATEGORIES: MegaCategory[] = [
   },
   {
     id: 'fountain-lights',
-    tabLabel: 'Fountain Lights',
-    tabLabelLines: ['Fountain', 'Lights'],
+    tabLabel: 'SS Spot Fountain Light',
+    tabLabelLines: ['SS Spot', 'Fountain Light'],
     icon: Sparkles,
     categoryLink: '/fountain-lighting',
     bannerCard: {
       image: '/assets/categories/led-fountain-lights-new.jpg',
-      eyebrow: 'FOUNTAIN LIGHTING',
+      eyebrow: 'SS SPOT FOUNTAIN LIGHT',
       title: 'Commercial Fountain Illumination',
       description: 'Dynamic underwater lighting engineered for plaza fountains, commercial water features, and choreography displays.',
       features: [
@@ -412,7 +412,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
     },
     categoryDetails: {
       eyebrow: 'EXPLORE OUR RANGE',
-      heading: 'Fountain Lights',
+      heading: 'SS Spot Fountain Light',
       description: 'Dynamic center-hole donut lights and high-intensity swivel spotlights for illuminated water columns.',
       categoryLink: '/fountain-lighting',
       products: [
@@ -446,7 +446,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
         },
       ],
     },
-    exploreButtonText: 'Explore All Fountain Lights',
+    exploreButtonText: 'Explore All SS Spot Fountain Lights',
     solutions: [
       { icon: LayoutGrid, title: 'Applications', description: 'Musical & Plaza Fountains', href: '/applications#fountains' },
       { icon: FileText, title: 'Technical Resources', description: 'Brochures, Installation Guides', href: '/catalogue' },
@@ -456,13 +456,13 @@ const MEGA_CATEGORIES: MegaCategory[] = [
   },
   {
     id: 'fountain-light-fittings',
-    tabLabel: 'Fountain Light Fittings',
-    tabLabelLines: ['Fountain Light', 'Fittings'],
+    tabLabel: 'SS Nozzle Light',
+    tabLabelLines: ['SS Nozzle', 'Light'],
     icon: CircleDot,
     categoryLink: '/fountain-lighting',
     bannerCard: {
       image: '/assets/categories/fountain-nozzles-new.jpg',
-      eyebrow: 'FOUNTAIN LIGHT FITTINGS',
+      eyebrow: 'SS NOZZLE LIGHT',
       title: 'Precision Fountain Nozzle Systems',
       description: 'Machined solid brass and 316 stainless steel nozzles sculpting crystal water curtains, aerated jets, and geysers.',
       features: [
@@ -473,7 +473,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
     },
     categoryDetails: {
       eyebrow: 'EXPLORE OUR RANGE',
-      heading: 'Fountain Light Fittings',
+      heading: 'SS Nozzle Light',
       description: 'Engineered hydrodynamics for architectural cascades, laminar bell sheets, and dramatic foam geysers.',
       categoryLink: '/fountain-lighting',
       products: [
@@ -507,7 +507,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
         },
       ],
     },
-    exploreButtonText: 'Explore All Fountain Light Fittings',
+    exploreButtonText: 'Explore All SS Nozzle Lights',
     solutions: [
       { icon: LayoutGrid, title: 'Applications', description: 'Plaza & Decorative Water Features', href: '/applications#water-features' },
       { icon: FileText, title: 'Technical Resources', description: 'Flow Rate & Pressure Specs', href: '/catalogue' },
@@ -517,13 +517,13 @@ const MEGA_CATEGORIES: MegaCategory[] = [
   },
   {
     id: 'led-fountain-lights',
-    tabLabel: 'LED Fountain Lights',
-    tabLabelLines: ['LED Fountain', 'Lights'],
+    tabLabel: 'Adjustable Nozzle Light',
+    tabLabelLines: ['Adjustable', 'Nozzle Light'],
     icon: Waves,
     categoryLink: '/fountain-lighting',
     bannerCard: {
       image: '/assets/categories/led-fountain-lights-new.jpg',
-      eyebrow: 'LED FOUNTAIN LIGHTS',
+      eyebrow: 'ADJUSTABLE NOZZLE LIGHT',
       title: 'High-Lumen LED Fountain Illuminators',
       description: 'State-of-the-art LED fountain fixtures delivering high intensity, saturated color mixing and fast response times.',
       features: [
@@ -534,7 +534,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
     },
     categoryDetails: {
       eyebrow: 'EXPLORE OUR RANGE',
-      heading: 'LED Fountain Lights',
+      heading: 'Adjustable Nozzle Light',
       description: 'Multi-wattage LED fixtures with integrated thermal management for brilliant vertical illumination of water features.',
       categoryLink: '/fountain-lighting',
       products: [
@@ -568,7 +568,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
         },
       ],
     },
-    exploreButtonText: 'Explore All LED Fountain Lights',
+    exploreButtonText: 'Explore All Adjustable Nozzle Lights',
     solutions: [
       { icon: LayoutGrid, title: 'Applications', description: 'Plaza & Interactive Fountains', href: '/applications#fountains' },
       { icon: FileText, title: 'Technical Resources', description: 'Addressing & Wiring Schemes', href: '/catalogue' },
@@ -578,13 +578,13 @@ const MEGA_CATEGORIES: MegaCategory[] = [
   },
   {
     id: 'architectural-water-lighting',
-    tabLabel: 'Architectural Water Lighting',
-    tabLabelLines: ['Architectural', 'Water Lighting'],
+    tabLabel: 'LED Wallwasher Light',
+    tabLabelLines: ['LED Wallwasher', 'Light'],
     icon: SunMedium,
     categoryLink: '/water-feature-lighting',
     bannerCard: {
       image: '/assets/categories/wall-washer-lights-new.jpg',
-      eyebrow: 'ARCHITECTURAL WATER LIGHTING',
+      eyebrow: 'LED WALLWASHER LIGHT',
       title: 'Linear Façade & Water Wall Washers',
       description: 'High-intensity linear LED luminaires casting seamless vertical light sweeps down textured stone and water curtains.',
       features: [
@@ -595,7 +595,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
     },
     categoryDetails: {
       eyebrow: 'EXPLORE OUR RANGE',
-      heading: 'Architectural Water Lighting',
+      heading: 'LED Wallwasher Light',
       description: 'Linear LED luminaires engineered to cast uniform light down textured stone facades and cascading water veils.',
       categoryLink: '/water-feature-lighting',
       products: [
@@ -629,7 +629,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
         },
       ],
     },
-    exploreButtonText: 'Explore All Architectural Water Lighting',
+    exploreButtonText: 'Explore All LED Wallwasher Lights',
     solutions: [
       { icon: LayoutGrid, title: 'Applications', description: 'Façades, Waterfalls & Entry Walls', href: '/water-feature-lighting' },
       { icon: FileText, title: 'Technical Resources', description: 'Mounting & Beam Angle Guides', href: '/catalogue' },
@@ -639,13 +639,13 @@ const MEGA_CATEGORIES: MegaCategory[] = [
   },
   {
     id: 'water-feature-lights',
-    tabLabel: 'Water Feature Lights',
-    tabLabelLines: ['Water Feature', 'Lights'],
+    tabLabel: 'Fountain Nozzle',
+    tabLabelLines: ['Fountain', 'Nozzle'],
     icon: Layers,
-    categoryLink: '/water-feature-lighting',
+    categoryLink: '/fountain-lighting',
     bannerCard: {
       image: '/assets/categories/water-curtains-new.jpg',
-      eyebrow: 'WATER FEATURE LIGHTS',
+      eyebrow: 'FOUNTAIN NOZZLE',
       title: 'Illuminated Waterfalls & Cascades',
       description: 'Engineered acrylic and 316L stainless steel waterfalls creating glass-like laminar sheets with integrated LED glow.',
       features: [
@@ -656,9 +656,9 @@ const MEGA_CATEGORIES: MegaCategory[] = [
     },
     categoryDetails: {
       eyebrow: 'EXPLORE OUR RANGE',
-      heading: 'Water Feature Lights',
+      heading: 'Fountain Nozzle',
       description: 'Mesmerizing water veils, acrylic cobra descents, and stainless steel sheer blades with internal LED lighting.',
-      categoryLink: '/water-feature-lighting',
+      categoryLink: '/fountain-lighting',
       products: [
         {
           title: 'Acrylic Cobra Nozzle with LED',
@@ -690,7 +690,7 @@ const MEGA_CATEGORIES: MegaCategory[] = [
         },
       ],
     },
-    exploreButtonText: 'Explore All Water Feature Lights',
+    exploreButtonText: 'Explore All Fountain Nozzles',
     solutions: [
       { icon: LayoutGrid, title: 'Applications', description: 'Resorts, Spas & Modern Pools', href: '/water-feature-lighting' },
       { icon: FileText, title: 'Technical Resources', description: 'Flow Rate Requirements Table', href: '/catalogue' },
@@ -970,10 +970,9 @@ export default function Header() {
                                   <IconComponent className="w-3.5 h-3.5" />
                                 </div>
 
-                                {/* Category Label (2 standardized lines) */}
-                                <div className="text-[10px] xl:text-[10.5px] 2xl:text-[11px] font-bold leading-[1.15] text-center flex flex-col items-center justify-center min-h-[22px] px-0.5">
-                                  <span className="truncate max-w-full">{cat.tabLabelLines[0]}</span>
-                                  <span className="truncate max-w-full">{cat.tabLabelLines[1]}</span>
+                                {/* Category Label (natural wrapping) */}
+                                <div className="text-[10px] xl:text-[10.5px] 2xl:text-[11px] font-bold leading-[1.15] text-center flex items-center justify-center min-h-[22px] px-0.5">
+                                  <span className="line-clamp-2 max-w-full leading-[1.15] text-center break-words">{cat.tabLabel}</span>
                                 </div>
 
                                 {/* Active Refined Cyan Underline */}
